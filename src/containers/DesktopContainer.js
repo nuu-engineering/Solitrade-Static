@@ -18,6 +18,8 @@ import {
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Link } from 'react-static'
+import SimpleLogo from './simple_logo.png'
+import Name from './name.png'
 
 class DesktopContainer extends Component {
   state = {}
@@ -129,20 +131,25 @@ class MobileContainer extends Component {
             <Segment
               inverted
               textAlign='center'
-              style={{ minHeight: 1, padding: '1em 0em' }}
+              style={{ padding: '0em 0em' }}
               vertical
+              basic
             >
-              <Container>
-                <Menu inverted pointing secondary size='large'>
+                <Menu inverted secondary size='large'>
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name='sidebar' />
+                    <Icon name='sidebar' size='large' />
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Icon name='phone'/> +1-864-498-8691  /
-                    <Icon name='mail'/> info@solitrade.com
+                    {/* <Icon name='phone'/> +1-864-498-8691  /
+                    <Icon name='mail'/> info@solitrade.com */}
+                    <Image src={Name} size='small' />
+                  </Menu.Item>
+                  <Menu.Item position='right'>
+                    {/* <Icon name='phone'/> +1-864-498-8691  /
+                    <Icon name='mail'/> info@solitrade.com */}
+                    <Image src={SimpleLogo} size='mini' />
                   </Menu.Item>
                 </Menu>
-              </Container>
             </Segment>
 
             {children}

@@ -20,6 +20,7 @@ import {
 import { Link } from 'react-static'
 import Footer from './Footer'
 import logo from './logo.png'
+import SimpleLogo from './simple_logo.png'
 import back from './backb.jpg'
 const HomepageHeading = ({ mobile }) => (
   <Container text>
@@ -178,20 +179,22 @@ class MobileContainer extends Component {
             <Segment
               inverted
               textAlign='center'
-              style={{ minHeight: 350, padding: '1em 0em' }}
+              style={{ minHeight: 500, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
+              // style={{ minHeight: 350, padding: '1em 0em' }}
               vertical
+              basic
             >
-              <Container>
-                <Menu inverted pointing secondary size='large'>
+                <Menu inverted pointing size='large'>
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name='sidebar' />
+                    <Icon name='sidebar' size='large' />
                   </Menu.Item>
-                  {/* <Menu.Item position='right'>
-                    <Icon name='phone'/> +1-864-498-8691  /
-                    <Icon name='mail'/> info@solitrade.com
-                  </Menu.Item> */}
+                  <Menu.Item position='right'>
+                    {/* <Icon name='phone'/> +1-864-498-8691  /
+                    <Icon name='mail'/> info@solitrade.com */}
+                    <Image src={SimpleLogo} size='mini' />
+                  </Menu.Item>
+
                 </Menu>
-              </Container>
               <HomepageHeading mobile />
             </Segment>
 
