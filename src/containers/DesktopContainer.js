@@ -119,7 +119,7 @@ class MobileContainer extends Component {
             <Menu.Item as='a' href='/products'>PRODUCTS</Menu.Item>
             <Menu.Item as='a' href='/community'>US</Menu.Item>
             <Menu.Item as='a' href='/events'>EVENTS</Menu.Item>
-            <Menu.Item as='a' href='' >CONTACT US</Menu.Item>
+            <Menu.Item as='a' href='/contact' >CONTACT US</Menu.Item>
 
           </Sidebar>
 
