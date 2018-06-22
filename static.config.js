@@ -13,7 +13,7 @@ export default {
     title: 'Solitrade',
   }),
   getRoutes: async () => {
-    const { data: events } = await axios.get('http://localhost:4000/json')
+    const { data: events } = await axios.get('http://sales.solitrade.com/json')
     // console.log(events)
     return [
       {

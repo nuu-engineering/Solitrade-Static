@@ -22,7 +22,7 @@ import Footer from './Footer'
 import { withRouteData, Link } from 'react-static'
 //
 
-var path='http://localhost:4000/'
+var path='http://sales.solitrade.com/'
 function get_link(lenguage){
   if (lenguage == "en"){
     return "events";

@@ -73,7 +73,7 @@ class DesktopContainer extends Component {
                   <Icon name='mail'/> info@solitrade.com
                 </Menu.Item> */}
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
+                  <Button as='a'  href="http://sales.solitrade.com" >
                     Log in
                   </Button>
                 </Menu.Item>
