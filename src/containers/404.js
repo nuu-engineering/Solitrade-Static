@@ -16,8 +16,8 @@ import {
   Visibility,
   Flag
 } from 'semantic-ui-react'
-import DesktopContainer from './DesktopContainer'
-import Footer from './Footer'
+import DesktopContainer from './en/DesktopContainer'
+import Footer from './en/Footer'
 
 const ResponsiveContainer = ({ children }) => (
   <div>
