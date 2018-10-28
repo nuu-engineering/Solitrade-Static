@@ -54,7 +54,7 @@ const ResponsiveContainer = ({ children }) => (
 export default withRouteData(({ events }) => (
   <ResponsiveContainer>
     <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
+      <Container text textAlign="center">
         <Header as='h1' style={{ fontSize: '2em' }}>
           Events
         </Header>

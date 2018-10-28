@@ -32,7 +32,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
+      <Container text textAlign="center">
         <Header as='h1' style={{ fontSize: '2em' }}>
           ABOUT US
         </Header>
@@ -41,7 +41,7 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '3% 0%' }}
      >
       <Grid.Row>
@@ -50,18 +50,18 @@ const PageLayout = () => (
         </Grid.Column>
           <Grid.Column width={8}>
             <Segment  basic>
-              <Header as='h3'>SALES AND MARKETING</Header>
+              <Header as="h3">SALES AND MARKETING</Header>
               <Divider section />
-              <Header as='h4'>
+              <Header as="h4">
                 Solitrade Group supports customers around the world
                  by offering a robust portfolio of the highest quality building
                  products. By focusing on a seamless customer experience, we
                  ensure that our customers can spend their time focusing on what
                  they do best—build their business.
                </Header>
-               <Header as='h3'>GLOBAL BRAND AND PRODUCT REPRESENTATION</Header>
+               <Header as="h3">GLOBAL BRAND AND PRODUCT REPRESENTATION</Header>
                <Divider section />
-               <Header as='h4'>
+               <Header as="h4">
                  As a global trading group, we carefully screen manufacturers
                   from around the world and compile only the best collection
                   of glass, insulation and other building products. Our goal is

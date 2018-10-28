@@ -41,7 +41,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer
     urlString="products">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"0em 0em", paddingTop: "2em" }}>
         OUR <span style={{color:"#2185d0"}}>PRODUCTS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
@@ -54,15 +54,15 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '3% 0%' }}
       columns="3"
      >
       <Grid.Row>
         <Grid.Column>
-          <Image src={Insulation} centered size='large'/>
+          <Image src={Insulation} centered size="large"/>
           <Segment basic >
-              <Header as='h3'>THERMAL AND ACCOUSTICAL INSULTATION</Header>
+              <Header as="h3">THERMAL AND ACCOUSTICAL INSULTATION</Header>
               <hr style={{
                 width: "10%",
                 border: "1px solid #2185d0",
@@ -84,9 +84,9 @@ const PageLayout = () => (
           </Segment>
         </Grid.Column>
           <Grid.Column>
-            <Image src={Other} centered size='large'/>
+            <Image src={Other} centered size="large"/>
             <Segment basic >
-            <Header as='h3'>WATERPROOFING COATINGS AND SYSTEMS</Header>
+            <Header as="h3">WATERPROOFING COATINGS AND SYSTEMS</Header>
             <hr style={{
               width: "10%",
               border: "1px solid #2185d0",
@@ -108,9 +108,9 @@ const PageLayout = () => (
             </Grid>
           </Grid.Column>
           <Grid.Column>
-            <Image src={Glass} centered size='large'/>
+            <Image src={Glass} centered size="large"/>
             <Segment basic >
-            <Header as='h3'>GLASS AND OTHER BUILDING MATERIALS</Header>
+            <Header as="h3">GLASS AND OTHER BUILDING MATERIALS</Header>
             <hr style={{
               width: "10%",
               border: "1px solid #2185d0",

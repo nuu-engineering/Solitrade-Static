@@ -32,7 +32,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
+      <Container text textAlign="center">
         <Header as='h1' style={{ fontSize: '2em' }}>
           OUR COMMUNITY
         </Header>

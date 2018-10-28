@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React from 'react'
 import {
-  Button,
   Container,
   Divider,
   Grid,
@@ -17,6 +16,8 @@ import {
   Visibility,
   Flag
 } from 'semantic-ui-react'
+import { withRouteData } from 'react-static'
+
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
 import Other from './../images/otherproducts.png'
@@ -39,10 +40,10 @@ ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 }
 
-const PageLayout = () => (
+const PageLayout = ({ brochuresNames }) => (
   <ResponsiveContainer
     urlString="brochures">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"0em 0em", paddingTop: "2em" }}>
         FOL<span style={{color:"#2185d0"}}>LETOS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
@@ -55,7 +56,7 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '3% 0%', paddingBottom: "8em" }}
       columns="4"
      >
@@ -67,7 +68,7 @@ const PageLayout = () => (
           <Image href='/es/brochures/silvercote' centered src={Silvercote} size='huge' />
         </Grid.Column>
         <Grid.Column>
-        <Image href='/es/brochures/insudry' centered src={Insudry} size='huge' />
+          <Image href='/es/brochures/insudry' centered src={Insudry} size='huge' />
         </Grid.Column>
         <Grid.Column>
           <Image href='/es/brochures/gmx' centered src={GMX} size='huge' style={{ padding: '0em -30em' }}/>
@@ -79,4 +80,4 @@ const PageLayout = () => (
 
 )
 
-export default PageLayout
+export default withRouteData(PageLayout)

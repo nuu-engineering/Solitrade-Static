@@ -27,7 +27,7 @@ class TabletFooter extends Component {
               <Grid divided inverted stackable>
                 <Grid.Row>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='SOBRE SOLITRADE' />
+                    <Header inverted as="h4" content='SOBRE SOLITRADE' />
                     <List inverted>
                       <List.Item>Apoyamos a clientes en todo el mundo
                          ofreciendo una sólida cartera de productos de
@@ -35,25 +35,25 @@ class TabletFooter extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='MAPA DE SITIO' />
+                    <Header inverted as="h4" content='MAPA DE SITIO' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/about">Sobre Nosotros</List.Item>
-                      <List.Item as='a' href="/es/products">Productos</List.Item>
-                      {/* <List.Item as='a' href="/es/brochures">Folletos</List.Item> */}
-                      <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
-                      <List.Item as='a' href="/es/contact">Contacto</List.Item>
+                      <List.Item as="a" href="/es/about">Sobre Nosotros</List.Item>
+                      <List.Item as="a" href="/es/products">Productos</List.Item>
+                      {/* <List.Item as="a" href="/es/brochures">Folletos</List.Item> */}
+                      <List.Item as="a" href="/es/community">Nuestra Comunidad</List.Item>
+                      <List.Item as="a" href="/es/contact">Contacto</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='PRODUCTOS' />
+                    <Header inverted as="h4" content='PRODUCTOS' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/products">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as='a' href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
-                      <List.Item as='a' href="/es/products">Vidrio y Otros Materiales</List.Item>
+                      <List.Item as="a" href="/es/products">Aislamiento Térmico y Acústico</List.Item>
+                      <List.Item as="a" href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as="a" href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='CONTACTO' />
+                    <Header inverted as="h4" content='CONTACTO' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
@@ -74,7 +74,7 @@ class TabletFooter extends Component {
             </Container>
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
-            <Container textAlign='center'>
+            <Container textAlign="center">
               Copyright © 2018 Solitrade Group. All Rights Reserved.
             </Container>
           </Segment>
@@ -93,7 +93,7 @@ class Footer extends Component {
               <Grid divided inverted stackable>
                 <Grid.Row>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='SOBRE SOLITRADE' />
+                    <Header inverted as="h4" content='SOBRE SOLITRADE' />
                     <List inverted>
                       <List.Item>Apoyamos a clientes en todo el mundo
                          ofreciendo una sólida cartera de productos de
@@ -101,25 +101,25 @@ class Footer extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='MAPA DE SITIO' />
+                    <Header inverted as="h4" content='MAPA DE SITIO' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/about">Sobre Nosotros</List.Item>
-                      <List.Item as='a' href="/es/products">Productos</List.Item>
-                      {/* <List.Item as='a' href="/es/brochures">Folletos</List.Item> */}
-                      <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
-                      <List.Item as='a' href="/es/contact">Contacto</List.Item>
+                      <List.Item as="a" href="/es/about">Sobre Nosotros</List.Item>
+                      <List.Item as="a" href="/es/products">Productos</List.Item>
+                      {/* <List.Item as="a" href="/es/brochures">Folletos</List.Item> */}
+                      <List.Item as="a" href="/es/community">Nuestra Comunidad</List.Item>
+                      <List.Item as="a" href="/es/contact">Contacto</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='PRODUCTOS' />
+                    <Header inverted as="h4" content='PRODUCTOS' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/products">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as='a' href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
-                      <List.Item as='a' href="/es/products">Vidrio y Otros Materiales</List.Item>
+                      <List.Item as="a" href="/es/products">Aislamiento Térmico y Acústico</List.Item>
+                      <List.Item as="a" href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as="a" href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='CONTACTO' />
+                    <Header inverted as="h4" content='CONTACTO' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
@@ -140,7 +140,7 @@ class Footer extends Component {
             </Container>
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
-            <Container textAlign='center'>
+            <Container textAlign="center">
               Copyright © 2018 Solitrade Group. All Rights Reserved.
             </Container>
 
@@ -160,7 +160,7 @@ class MobileFooter extends Component {
               <Grid divided inverted>
                 <Grid.Row>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='ABOUT SOLITRADE' />
+                    <Header inverted as="h4" content='ABOUT SOLITRADE' />
                     <List inverted>
                       <List.Item>Apoyamos a clientes en todo el mundo
                          ofreciendo una sólida cartera de productos de
@@ -168,28 +168,28 @@ class MobileFooter extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='MAPA DE SITIO' />
+                    <Header inverted as="h4" content='MAPA DE SITIO' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/about">Sobre Nosotros</List.Item>
-                      <List.Item as='a' href="/es/products">Productos</List.Item>
-                      {/* <List.Item as='a' href="/es/brochures">Folletos</List.Item> */}
-                      <List.Item as='a' href="/es/community">Nuestra Comunidad</List.Item>
-                      <List.Item as='a' href="/es/contact">Contacto</List.Item>
+                      <List.Item as="a" href="/es/about">Sobre Nosotros</List.Item>
+                      <List.Item as="a" href="/es/products">Productos</List.Item>
+                      {/* <List.Item as="a" href="/es/brochures">Folletos</List.Item> */}
+                      <List.Item as="a" href="/es/community">Nuestra Comunidad</List.Item>
+                      <List.Item as="a" href="/es/contact">Contacto</List.Item>
                     </List>
                   </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
 
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='PRODUCTOS' />
+                    <Header inverted as="h4" content='PRODUCTOS' />
                     <List link inverted>
-                      <List.Item as='a' href="/es/products">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as='a' href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
-                      <List.Item as='a' href="/es/products">Vidrio y Otros Materiales</List.Item>
+                      <List.Item as="a" href="/es/products">Aislamiento Térmico y Acústico</List.Item>
+                      <List.Item as="a" href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as="a" href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='CONTACTO' />
+                    <Header inverted as="h4" content='CONTACTO' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
@@ -210,7 +210,7 @@ class MobileFooter extends Component {
             </Container>
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
-            <Container textAlign='center'>
+            <Container textAlign="center">
               Copyright © 2018 Solitrade Group. All Rights Reserved.
             </Container>
 

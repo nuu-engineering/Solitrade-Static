@@ -35,7 +35,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer
     urlString="community">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         NUESTRA <span style={{color:"#2185d0"}}>COMUNIDAD</span>
         <hr style={{

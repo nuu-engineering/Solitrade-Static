@@ -35,7 +35,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer
     urlString="about">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
         ACERCA DE <span style={{color:"#2185d0"}}>NOSOTROS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
@@ -57,7 +57,7 @@ const PageLayout = () => (
         </Grid.Column>
         <Grid.Column>
           <Segment  basic>
-            <Header as='h3'>VENTAS Y MERCADOTECNIA</Header>
+            <Header as="h3">VENTAS Y MERCADOTECNIA</Header>
             <hr style={{
               width: "10%",
               border: "1px solid #2185d0",
@@ -72,7 +72,7 @@ const PageLayout = () => (
                 centrarse en lo que hacen mejor: construir su negocio. En
                 esencia, estamos construidos para ayudarle a construir.
              </p>
-             <Header as='h3'>REPRESENTACIÓN GLOBAL DE MARCAS Y PRODUCTOS</Header>
+             <Header as="h3">REPRESENTACIÓN GLOBAL DE MARCAS Y PRODUCTOS</Header>
              <hr style={{
                width: "10%",
                border: "1px solid #2185d0",

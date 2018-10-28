@@ -32,7 +32,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '3em 0em' }} vertical>
-      <Container text textAlign='center'>
+      <Container text textAlign="center">
         <Header as='h1' style={{ fontSize: '2em' }}>
           Page Not Found
         </Header>
@@ -41,7 +41,7 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '3% 0%' }}
      >
     </Grid>

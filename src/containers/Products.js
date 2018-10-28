@@ -39,7 +39,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '3% 0%' }} vertical>
-      <Container text textAlign='center'>
+      <Container text textAlign="center">
         <Header as='h1' style={{ fontSize: '2em' }}>
           PRODUCTS
         </Header>
@@ -48,14 +48,14 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '3% 0%' }}
      >
       <Grid.Row>
         <Grid.Column width={5}>
-          <Image src={Insulation} centered size='large'/>
+          <Image src={Insulation} centered size="large"/>
           <Segment basic >
-              <Header as='h3'>THERMAL AND ACCOUSTICAL INSULTATION</Header>
+              <Header as="h3">THERMAL AND ACCOUSTICAL INSULTATION</Header>
               <Divider />
               <Header as='h5'>Exclusive sales representative of Knauf Insulation
                 North America products for Latin America.</Header>
@@ -72,11 +72,11 @@ const PageLayout = () => (
           </Segment>
         </Grid.Column>
           <Grid.Column width={5}>
-            <Image src={Other} centered size='large'/>
+            <Image src={Other} centered size="large"/>
             <Segment basic >
-            <Header as='h3'>WATERPROOFING COATINGS AND SYSTEMS</Header>
+            <Header as="h3">WATERPROOFING COATINGS AND SYSTEMS</Header>
             <Divider />
-            <Header as='h3'>Distribution of waterproofing products,
+            <Header as="h3">Distribution of waterproofing products,
               coatings and acoustical mats. </Header>
             </Segment>
             <Grid>
@@ -91,11 +91,11 @@ const PageLayout = () => (
             </Grid>
           </Grid.Column>
           <Grid.Column width={5}>
-            <Image src={Glass} centered size='large'/>
+            <Image src={Glass} centered size="large"/>
             <Segment basic >
-            <Header as='h3'>GLASS AND OTHER BUILDING MATERIALS</Header>
+            <Header as="h3">GLASS AND OTHER BUILDING MATERIALS</Header>
             <Divider />
-            <Header as='h3'>We distribute high quality glass at competitive
+            <Header as="h3">We distribute high quality glass at competitive
               prices.</Header>
             </Segment>
           </Grid.Column>

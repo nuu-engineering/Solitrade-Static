@@ -27,7 +27,7 @@ class Footer extends Component {
               <Grid divided inverted stackable>
                 <Grid.Row>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='ABOUT SOLITRADE' />
+                    <Header inverted as="h4" content='ABOUT SOLITRADE' />
                     <List inverted>
                       <List.Item>We support customers around the world by
                         offering a robust portfolio of the highest quality building
@@ -35,24 +35,24 @@ class Footer extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='SITE MAP' />
+                    <Header inverted as="h4" content='SITE MAP' />
                     <List link inverted>
-                      <List.Item as='a' href="/about">About Us</List.Item>
-                      <List.Item as='a' href="/products">Products</List.Item>
-                      <List.Item as='a' href="/community">Our Community</List.Item>
-                      <List.Item as='a' href="/contact">Contact</List.Item>
+                      <List.Item as="a" href="/about">About Us</List.Item>
+                      <List.Item as="a" href="/products">Products</List.Item>
+                      <List.Item as="a" href="/community">Our Community</List.Item>
+                      <List.Item as="a" href="/contact">Contact</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='PRODUCTS' />
+                    <Header inverted as="h4" content='PRODUCTS' />
                     <List link inverted>
-                      <List.Item as='a' href="/products">Thermal and Accoustical Insulation</List.Item>
-                      <List.Item as='a' href="/products" >Waterproofing Coatings and Systems</List.Item>
-                      <List.Item as='a' href="/products">Glass and other products</List.Item>
+                      <List.Item as="a" href="/products">Thermal and Accoustical Insulation</List.Item>
+                      <List.Item as="a" href="/products" >Waterproofing Coatings and Systems</List.Item>
+                      <List.Item as="a" href="/products">Glass and other products</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={4}>
-                    <Header inverted as='h4' content='CONTACT' />
+                    <Header inverted as="h4" content='CONTACT' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
@@ -73,7 +73,7 @@ class Footer extends Component {
             </Container>
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
-            <Container textAlign='center'>
+            <Container textAlign="center">
               Copyright © 2018 Solitrade Group. All Rights Reserved.
             </Container>
 
@@ -93,7 +93,7 @@ class MobileFooter extends Component {
               <Grid divided inverted>
                 <Grid.Row>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='ABOUT SOLITRADE' />
+                    <Header inverted as="h4" content='ABOUT SOLITRADE' />
                     <List inverted>
                       <List.Item>We support customers around the world by
                         offering a robust portfolio of the highest quality building
@@ -101,27 +101,27 @@ class MobileFooter extends Component {
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='SITE MAP' />
+                    <Header inverted as="h4" content='SITE MAP' />
                     <List link inverted>
-                      <List.Item as='a' href="/about">About Us</List.Item>
-                      <List.Item as='a' href="/products">Products</List.Item>
-                      <List.Item as='a' href="/community">Our Community</List.Item>
-                      <List.Item as='a' href="/contact">Contact</List.Item>
+                      <List.Item as="a" href="/about">About Us</List.Item>
+                      <List.Item as="a" href="/products">Products</List.Item>
+                      <List.Item as="a" href="/community">Our Community</List.Item>
+                      <List.Item as="a" href="/contact">Contact</List.Item>
                     </List>
                   </Grid.Column>
                   </Grid.Row>
                   <Grid.Row>
 
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='PRODUCTS' />
+                    <Header inverted as="h4" content='PRODUCTS' />
                     <List link inverted>
-                      <List.Item as='a' href="/products">Thermal and Accoustical Insulation</List.Item>
-                      <List.Item as='a' href="/products" >Waterproofing Coatings and Systems</List.Item>
-                      <List.Item as='a' href="/products">Glass and other products</List.Item>
+                      <List.Item as="a" href="/products">Thermal and Accoustical Insulation</List.Item>
+                      <List.Item as="a" href="/products" >Waterproofing Coatings and Systems</List.Item>
+                      <List.Item as="a" href="/products">Glass and other products</List.Item>
                     </List>
                   </Grid.Column>
                   <Grid.Column width={8}>
-                    <Header inverted as='h4' content='CONTACT' />
+                    <Header inverted as="h4" content='CONTACT' />
                     <List inverted>
                       <List.Item>
                         <Icon name='phone' />
@@ -142,7 +142,7 @@ class MobileFooter extends Component {
             </Container>
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
-            <Container textAlign='center'>
+            <Container textAlign="center">
               Copyright © 2018 Solitrade Group. All Rights Reserved.
             </Container>
 

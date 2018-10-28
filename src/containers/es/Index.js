@@ -49,7 +49,7 @@ const HomepageHeading = ({ mobile }) => (
     <br/>
     <br/>
     <br/>
-    <Image centered src={logo} size='large'/>
+    <Image centered src={logo} size="large"/>
     <Responsive {...Responsive.onlyComputer}>
       <Grid
         columns = "2"
@@ -58,12 +58,12 @@ const HomepageHeading = ({ mobile }) => (
       >
         <Grid.Row centered>
           <Grid.Column style={{textAlign: "center"}}>
-            <Button primary size='big' href="/es/about">
+            <Button primary size="big" href="/es/about">
               MÁS INFORMACIÓN
             </Button>
           </Grid.Column>
           <Grid.Column style={{textAlign: "center"}}>
-            <Button inverted size='big' href="/es/contact" >
+            <Button inverted size="big" href="/es/contact" >
               CONTÁCTANOS
             </Button>
           </Grid.Column>
@@ -78,12 +78,12 @@ const HomepageHeading = ({ mobile }) => (
     >
       <Grid.Row centered>
         <Grid.Column style={{textAlign: "center"}}>
-          <Button primary size='big' href="/es/about">
+          <Button primary size="big" href="/es/about">
             MÁS INFORMACIÓN
           </Button>
         </Grid.Column>
         <Grid.Column style={{textAlign: "center"}}>
-          <Button inverted size='big' href="/es/contact" >
+          <Button inverted size="big" href="/es/contact" >
             CONTÁCTANOS
           </Button>
         </Grid.Column>
@@ -98,12 +98,12 @@ const HomepageHeading = ({ mobile }) => (
     >
       <Grid.Row centered>
         <Grid.Column style={{textAlign: "center"}}>
-          <Button primary size='big' href="/es/about">
+          <Button primary size="big" href="/es/about">
             MÁS INFORMACIÓN
           </Button>
         </Grid.Column>
         <Grid.Column style={{textAlign: "center"}}>
-          <Button inverted size='big' href="/es/contact" >
+          <Button inverted size="big" href="/es/contact" >
             CONTÁCTANOS
           </Button>
         </Grid.Column>
@@ -141,7 +141,7 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
-            textAlign='center'
+            textAlign="center"
             style={{ minHeight: 900, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
             vertical
           >
@@ -150,12 +150,14 @@ class DesktopContainer extends Component {
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
-              size='large'
+              size="large"
               style = {{margin: 0, padding: '0em 0em'}}
             >
-              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item position='right'>
+              <Menu.Item as="a" href="https://www.linkedin.com/company/solitrade-group" target="_blank">
+                <Icon name="linkedin in" />
+              </Menu.Item>
+              <Menu.Item as="a" href="/"><Flag name='us' /></Menu.Item>
+              <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
               <Menu.Item>
@@ -163,7 +165,7 @@ class DesktopContainer extends Component {
               </Menu.Item>
               <Menu.Item>
                 {/* <Image src={SideLogo} size='small' /> */}
-                <Button as='a'  href="http://sales.solitrade.com" >
+                <Button as="a"  href="http://sales.solitrade.com" >
                   Log in
                 </Button>
               </Menu.Item>
@@ -177,20 +179,20 @@ class DesktopContainer extends Component {
               // pointing={!fixed}
               // secondary={!fixed}
               style={{padding: "0em 0em", margin: 0}}
-              size='large'
+              size="large"
               >
                 <Container>
-                  {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
-                  {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
-                  <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                  <Menu.Item as='a' href='/es/'>
+                  {/* <Menu.Item as="a" href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
+                  {/* <Menu.Item as="a" href=''><Flag name='es' /></Menu.Item>
+                  <Menu.Item as="a" href=''><Flag name='us' /></Menu.Item> */}
+                  <Menu.Item as="a" href='/es/'>
                     <Image src={SideLogo} size='small' />
                   </Menu.Item>
-                  <Menu.Item position='right' as='a' href='/es'>INICIO</Menu.Item>
+                  <Menu.Item position="right" as="a" href='/es'>INICIO</Menu.Item>
                   <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
-                  <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
-                  <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
-                  <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
+                  <Menu.Item as="a" href='/es/about'>SOBRE NOSOTROS</Menu.Item>
+                  <Menu.Item as="a" href='/es/products'>PRODUCTOS</Menu.Item>
+                  <Menu.Item as="a" href='/es/brochures'>FOLLETOS</Menu.Item>
 
                   {/* <Dropdown text='FOLLETOS' pointing className='link item'>
                     <Dropdown.Menu>
@@ -206,7 +208,7 @@ class DesktopContainer extends Component {
                       <Dropdown.Item href='/es/events'>EVENTOS</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                  <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
+                  <Menu.Item as="a" href='/es/contact' >CONTÁCTANOS</Menu.Item>
                   {/* <Menu.Item>
                     <Icon name='phone'/> +1-864-498-8691
                   </Menu.Item>
@@ -249,7 +251,7 @@ class TabletContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
-            textAlign='center'
+            textAlign="center"
             style={{ minHeight: 900, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
             vertical
           >
@@ -258,12 +260,14 @@ class TabletContainer extends Component {
               inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
-              size='large'
+              size="large"
               style = {{margin: 0, padding: '0em 0em'}}
             >
-              <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item>
-              <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-              <Menu.Item position='right'>
+              <Menu.Item as="a" href="https://www.linkedin.com/company/solitrade-group" target="_blank">
+                <Icon name="linkedin in" />
+              </Menu.Item>
+              <Menu.Item as="a" href="/"><Flag name='us' /></Menu.Item>
+              <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
               <Menu.Item>
@@ -271,7 +275,7 @@ class TabletContainer extends Component {
               </Menu.Item>
               <Menu.Item>
                 {/* <Image src={SideLogo} size='small' /> */}
-                <Button as='a'  href="http://sales.solitrade.com" >
+                <Button as="a"  href="http://sales.solitrade.com" >
                   Log in
                 </Button>
               </Menu.Item>
@@ -285,20 +289,20 @@ class TabletContainer extends Component {
               // pointing={!fixed}
               // secondary={!fixed}
               style={{padding: "0em 0em", margin: 0}}
-              size='large'
+              size="large"
               >
                 <Container>
-                  {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
-                  {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
-                  <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-                  <Menu.Item as='a' href='/es/'>
+                  {/* <Menu.Item as="a" href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
+                  {/* <Menu.Item as="a" href=''><Flag name='es' /></Menu.Item>
+                  <Menu.Item as="a" href=''><Flag name='us' /></Menu.Item> */}
+                  <Menu.Item as="a" href='/es/'>
                     <Image src={SideLogo} size='small' />
                   </Menu.Item>
-                  <Menu.Item position='right' as='a' href='/es'>INICIO</Menu.Item>
+                  <Menu.Item position="right" as="a" href='/es'>INICIO</Menu.Item>
                   <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
-                  <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
-                  <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
-                  <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
+                  <Menu.Item as="a" href='/es/about'>SOBRE NOSOTROS</Menu.Item>
+                  <Menu.Item as="a" href='/es/products'>PRODUCTOS</Menu.Item>
+                  <Menu.Item as="a" href='/es/brochures'>FOLLETOS</Menu.Item>
                   {/*
                   <Dropdown text='FOLLETOS' pointing className='link item'>
                     <Dropdown.Menu>
@@ -314,7 +318,7 @@ class TabletContainer extends Component {
                       <Dropdown.Item href='/es/events'>EVENTOS</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
-                  <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
+                  <Menu.Item as="a" href='/es/contact' >CONTÁCTANOS</Menu.Item>
                   {/* <Menu.Item>
                     <Icon name='phone'/> +1-864-498-8691
                   </Menu.Item>
@@ -348,7 +352,7 @@ class MobileContainer extends Component {
 
   handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
 
-  render() {
+  render () {
     const { children } = this.props
     const { sidebarOpened } = this.state
 
@@ -357,15 +361,15 @@ class MobileContainer extends Component {
         {/* <Favicon url={Favicon} /> */}
         <Layout title="Solitrade Group"/>
         <Sidebar.Pushable>
-          <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-            {/* <Menu.Item as='a' href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item> */}
-            {/* <Menu.Item as='a' href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
-            {/* <Menu.Item as='a' href=''><Flag name='es' /></Menu.Item>
-            <Menu.Item as='a' href=''><Flag name='us' /></Menu.Item> */}
-            <Menu.Item as='a' href='/es'>INICIO</Menu.Item>
-            <Menu.Item as='a' href='/es/about'>SOBRE NOSOTROS</Menu.Item>
-            <Menu.Item as='a' href='/es/products'>PRODUCTOS</Menu.Item>
-            <Menu.Item as='a' href='/es/brochures'>FOLLETOS</Menu.Item>
+          <Sidebar as={Menu} animation="uncover" inverted vertical visible={sidebarOpened}>
+            {/* <Menu.Item as="a" href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item> */}
+            {/* <Menu.Item as="a" href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
+            {/* <Menu.Item as="a" href=''><Flag name='es' /></Menu.Item>
+            <Menu.Item as="a" href=''><Flag name='us' /></Menu.Item> */}
+            <Menu.Item as="a" href='/es'>INICIO</Menu.Item>
+            <Menu.Item as="a" href='/es/about'>SOBRE NOSOTROS</Menu.Item>
+            <Menu.Item as="a" href='/es/products'>PRODUCTOS</Menu.Item>
+            <Menu.Item as="a" href='/es/brochures'>FOLLETOS</Menu.Item>
             {/*
             <Dropdown text='FOLLETOS' pointing className='link item'>
               <Dropdown.Menu>
@@ -377,7 +381,7 @@ class MobileContainer extends Component {
             </Dropdown> */}
             <Menu.Item href='/es/community'>COMUNIDAD</Menu.Item>
             <Menu.Item href='/es/events'>EVENTOS</Menu.Item>
-            <Menu.Item as='a' href='/es/contact' >CONTÁCTANOS</Menu.Item>
+            <Menu.Item as="a" href='/es/contact' >CONTÁCTANOS</Menu.Item>
 
           </Sidebar>
 
@@ -388,24 +392,24 @@ class MobileContainer extends Component {
           >
             <Segment
               inverted
-              textAlign='center'
+              textAlign="center"
               style={{ minHeight: 900, padding: '0em 0em', backgroundImage: `url(${back})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}
               // style={{ minHeight: 350, padding: '1em 0em' }}
               vertical
               basic
             >
-                <Menu inverted pointing size='large'>
-                  <Menu.Item onClick={this.handleToggle}>
-                    <Icon name='sidebar' size='large' />
-                  </Menu.Item>
-                  <Menu.Item as='a' href='/'><Flag name='us' /></Menu.Item>
-                  <Menu.Item as='a' href='/es/' position='right'>
-                    {/* <Icon name='phone'/> +1-864-498-8691  /
-                    <Icon name='mail'/> info@solitrade.com */}
-                    <Image src={SimpleLogo} size='mini' />
-                  </Menu.Item>
+              <Menu inverted pointing size="large">
+                <Menu.Item onClick={this.handleToggle}>
+                  <Icon name="sidebar" size="large" />
+                </Menu.Item>
+                <Menu.Item as="a" href="/"><Flag name='us' /></Menu.Item>
+                <Menu.Item as="a" href='/es/' position="right">
+                  {/* <Icon name='phone'/> +1-864-498-8691  /
+                  <Icon name='mail'/> info@solitrade.com */}
+                  <Image src={SimpleLogo} size="mini" />
+                </Menu.Item>
 
-                </Menu>
+              </Menu>
               <HomepageHeading mobile />
             </Segment>
 
@@ -435,7 +439,7 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         NUESTROS <span style={{color:"#2185d0"}}>SERVICIOS</span>
         <hr style={{
@@ -448,28 +452,28 @@ const HomepageLayout = () => (
       <Grid container stackable >
         <Grid.Row>
           <Grid.Column width={8}>
-            <Image src={InternationalSales} size='medium' floated='left'/>
-            <Header as='h3'>VENTAS Y MERCADOTECNIA INTERNACIONAL</Header>
+            <Image src={InternationalSales} size="medium" floated="left"/>
+            <Header as="h3">VENTAS Y MERCADOTECNIA INTERNACIONAL</Header>
             <hr style={{
               width: "40%",
               border: "1px solid #2185d0",
             }}/>
-            <Header as='h4'>Red global de clientes y proveedores.</Header>
+            <Header as="h4">Red global de clientes y proveedores.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            <Image src={Valuation} size='medium' floated='left'/>
-            <Header as='h3'>EVALUACIÓN DE MERCADOS INTERNACIONALES</Header>
+            <Image src={Valuation} size="medium" floated="left"/>
+            <Header as="h3">EVALUACIÓN DE MERCADOS INTERNACIONALES</Header>
             <hr style={{
               width: "40%",
               border: "1px solid #2185d0",
             }}/>
-            <Header as='h4'>Posicionamiento de productos en el mercado correcto para el éxito.</Header>
+            <Header as="h4">Posicionamiento de productos en el mercado correcto para el éxito.</Header>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={8}>
-            <Image src={GlogalLogistics} size='medium' floated='left'/>
-            <Header as='h3'>EXPERIENCIA EN LOGÍSTICA GLOBAL</Header>
+            <Image src={GlogalLogistics} size="medium" floated="left"/>
+            <Header as="h3">EXPERIENCIA EN LOGÍSTICA GLOBAL</Header>
             <Container style={{padding:"0em "}}>
               <hr style={{
                 width: "40%",
@@ -477,28 +481,28 @@ const HomepageLayout = () => (
                 right: "1000px"
               }}/>
             </Container>
-            <Header as='h4'>Entregas eficientes fiables y seguras.</Header>
+            <Header as="h4">Entregas eficientes fiables y seguras.</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            <Image src={CostumerService} size='medium' floated='left' />
-            <Header as='h3'>EXCELENTE SERVICIO AL CLIENTE</Header>
+            <Image src={CostumerService} size="medium" floated="left" />
+            <Header as="h3">EXCELENTE SERVICIO AL CLIENTE</Header>
             <hr style={{
               width: "40%",
               border: "1px solid #2185d0",
               padding: "0em 0em"
             }}/>
-            <Header as='h4'>Nos centramos en la total confianza y satisfacción de nuestros clientes</Header>
+            <Header as="h4">Nos centramos en la total confianza y satisfacción de nuestros clientes</Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
 
     <Segment style={{ padding: '8em 0em', backgroundColor:'#666666'}} vertical>
-      <Container text textAlign='center'>
-        <Header as='h2' style={{ fontSize: '2em', color:'#FFFFFF' }}>
+      <Container text textAlign="center">
+        <Header as="h2" style={{ fontSize: '2em', color:'#FFFFFF' }}>
           ESTAMOS CONSTRUIDOS
         </Header>
-        <Header as='h2' style={{ fontSize: '2em', color:'#66BEFA' }}>
+        <Header as="h2" style={{ fontSize: '2em', color:'#66BEFA' }}>
           PARA AYUDARTE A CONSTRUIR
         </Header>
       </Container>

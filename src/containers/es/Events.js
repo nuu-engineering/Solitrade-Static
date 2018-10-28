@@ -78,7 +78,7 @@ export default withRouteData(({ events }) => (
   <ResponsiveContainer
     urlString='events'
   >
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         NUESTROS <span style={{color:"#2185d0"}}>EVENTOS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
