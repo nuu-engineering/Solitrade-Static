@@ -55,7 +55,7 @@ export default class extends React.Component {
   render () {
     return (
       <DesktopContainer urlString="contact">
-        <Container text textAlign='center'>
+        <Container text textAlign="center">
           <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
             CONTACTA<span style={{color:"#2185d0"}}>NOS</span>
             {/* <Divider style={{color:"#2185d0"}}/> */}
@@ -104,17 +104,17 @@ export default class extends React.Component {
                        </form>
                </Grid.Column>
                <Grid.Column  style={{ padding: '0em 1em' }} width={6}>
-                     <Header as='h4' content='INFO DE CONTACTO' />
+                     <Header as="h4" content='INFO DE CONTACTO' />
                          <Grid.Column style={{ padding: '1em 0em' }}>
-                           <Icon name='phone' color='blue' size='big' />
+                           <Icon name='phone' color='blue' size="big" />
                             +1-864-498-8691
                          </Grid.Column>
                          <Grid.Column style={{ padding: '1em 0em' }}>
-                           <Icon name='mail' color='blue' size='big'/>
+                           <Icon name='mail' color='blue' size="big"/>
                             info@solitrade.com
                          </Grid.Column>
                          <Grid.Column style={{ padding: '1em 0em' }}>
-                           <Icon name='point' color='blue' size='big'/>
+                           <Icon name='point' color='blue' size="big"/>
                             CHARLOTTE, NC 28203 (USA)
                          </Grid.Column>
                  </Grid.Column>

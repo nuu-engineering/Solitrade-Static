@@ -41,7 +41,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer
     urlString="products">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
         NUESTROS <span style={{color:"#2185d0"}}>PRODUCTOS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
@@ -54,15 +54,15 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '0% 0%' }}
       columns="3"
      >
       <Grid.Row>
         <Grid.Column>
-          <Image href="http://insudry.com/" src={Insulation} centered size='large'/>
+          <Image href="http://insudry.com/" src={Insulation} centered size="large"/>
           <Segment basic >
-              <Header as='h3'>AISLAMIENTO TÉRMICO Y ACÚSTICO</Header>
+              <Header as="h3">AISLAMIENTO TÉRMICO Y ACÚSTICO</Header>
               <hr style={{
                 width: "10%",
                 border: "1px solid #2185d0",
@@ -84,9 +84,9 @@ const PageLayout = () => (
           </Segment>
         </Grid.Column>
           <Grid.Column>
-            <Image src={Other} centered size='large'/>
+            <Image src={Other} centered size="large"/>
             <Segment basic >
-            <Header as='h3'>RECUBRIMIENTOS A PRUEBA DE AGUA</Header>
+            <Header as="h3">RECUBRIMIENTOS A PRUEBA DE AGUA</Header>
             <hr style={{
               width: "10%",
               border: "1px solid #2185d0",
@@ -108,9 +108,9 @@ const PageLayout = () => (
             </Grid>
           </Grid.Column>
           <Grid.Column>
-            <Image src={Glass} centered size='large'/>
+            <Image src={Glass} centered size="large"/>
             <Segment basic >
-            <Header as='h3'>VIDRIO Y OTROS MATERIALES</Header>
+            <Header as="h3">VIDRIO Y OTROS MATERIALES</Header>
             <hr style={{
               width: "10%",
               border: "1px solid #2185d0",

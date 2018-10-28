@@ -50,7 +50,7 @@ const ResponsiveContainer = ({ children, urlString }) => (
 export default withRouteData(({ brochures }) => (
   <ResponsiveContainer
     urlString="brochures/gmx">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         <span style={{color:"#2185d0"}}>GMX</span>
         <hr style={{

@@ -35,7 +35,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer
     urlString="about">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"1em 0em", paddingTop: "2em" }}>
         GRACIAS POR CONTACTAR<span style={{color:"#2185d0"}}>NOS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}

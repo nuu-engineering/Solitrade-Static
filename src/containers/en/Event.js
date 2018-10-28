@@ -64,11 +64,11 @@ export default withRouteData(({ event }) => (
       urlString={"events/" + event.name.replace(/\s+/g, '-').toLowerCase()}
     >
       <Segment style={{ padding: '3em 0em' }} basic vertical>
-        <Container text textAlign='center'>
+        <Container text textAlign="center">
           <Header as='h1' style={{ fontSize: '2em' }}>
             {event.name}
           </Header>
-          {/* <Header as='h4' color='blue' style={{ fontSize: '2em' }}>
+          {/* <Header as="h4" color='blue' style={{ fontSize: '2em' }}>
             {event.description}
           </Header> */}
           <Divider color="blue" />

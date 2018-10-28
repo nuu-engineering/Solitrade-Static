@@ -49,7 +49,7 @@ const ResponsiveContainer = ({ children, urlString }) => (
 export default withRouteData(({ brochures }) => (
   <ResponsiveContainer
     urlString="brochures/InsuDry">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         INSU<span style={{color:"#2185d0"}}>DRY</span>
         <hr style={{

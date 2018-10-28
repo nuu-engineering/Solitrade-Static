@@ -42,7 +42,7 @@ ResponsiveContainer.propTypes = {
 const PageLayout = () => (
   <ResponsiveContainer
     urlString="brochures">
-    <Container text textAlign='center'>
+    <Container text textAlign="center">
       <Header as='h1' style={{ fontSize: '2em', padding:"0em 0em", paddingTop: "2em" }}>
         BRO<span style={{color:"#2185d0"}}>CHURES</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
@@ -55,7 +55,7 @@ const PageLayout = () => (
     <Grid
       container
       stackable
-      divided='vertically'
+      divided="vertically"
       style={{ padding: '3% 0%', paddingBottom: "8em" }}
       columns="4"
      >

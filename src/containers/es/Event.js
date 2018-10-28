@@ -63,7 +63,7 @@ export default withRouteData(({ event }) => (
     <ResponsiveContainer
       urlString={"events/" + event.name.replace(/\s+/g, '-').toLowerCase()}
     >
-      <Container text textAlign='center'>
+      <Container text textAlign="center">
         <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
           {event.es_name}
           <hr style={{

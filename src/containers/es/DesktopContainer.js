@@ -97,7 +97,7 @@ class TabletContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
-            textAlign='center'
+            textAlign="center"
             style={{ padding: '0em 0em'}}
             vertical
             inverted
@@ -108,7 +108,7 @@ class TabletContainer extends Component {
               inverted
               // pointing={!fixed}
               secondary={!fixed}
-              size='large'
+              size="large"
             >
               <Menu.Item as="a" href="https://www.linkedin.com/company/solitrade-group" target="_blank">
                 <Icon name="linkedin in" />
@@ -117,7 +117,7 @@ class TabletContainer extends Component {
               <Menu.Item as="a" href={get_es_link()}><Flag name='es' /></Menu.Item> */}
               <Menu.Item as="a" href={`/${urlString}`} > <Flag name='us' /></Menu.Item>
 
-              <Menu.Item position='right'>
+              <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
               <Menu.Item>
@@ -138,7 +138,7 @@ class TabletContainer extends Component {
               // inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
-              size='large'
+              size="large"
             >
 
               <Container>
@@ -146,9 +146,9 @@ class TabletContainer extends Component {
                 {/* <Menu.Item as="a" href=''><Flag name='es' /></Menu.Item>
                 <Menu.Item as="a" href=''><Flag name='us' /></Menu.Item> */}
                 <Menu.Item as="a" href='/es/'>
-                  <Image src={SimpleLogo} size='mini' />
+                  <Image src={SimpleLogo} size="mini" />
                 </Menu.Item>
-                <Menu.Item as="a" href='/es/' position='right'>INICIO</Menu.Item>
+                <Menu.Item as="a" href='/es/' position="right">INICIO</Menu.Item>
                 <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                 <Menu.Item as="a" href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                 <Menu.Item as="a" href='/es/products'>PRODUCTOS</Menu.Item>
@@ -207,7 +207,7 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
-            textAlign='center'
+            textAlign="center"
             style={{ padding: '0em 0em'}}
             vertical
             inverted
@@ -218,7 +218,7 @@ class DesktopContainer extends Component {
               inverted
               // pointing={!fixed}
               secondary={!fixed}
-              size='large'
+              size="large"
             >
               <Menu.Item as="a" href="https://www.linkedin.com/company/solitrade-group" target="_blank">
                 <Icon name="linkedin in" />
@@ -226,7 +226,7 @@ class DesktopContainer extends Component {
               {/* <Menu.Item as="a"  href={get_en_link()}><Flag name='us' /></Menu.Item>
               <Menu.Item as="a" href={get_es_link()}><Flag name='es' /></Menu.Item> */}
               <Menu.Item as="a" href={`/${urlString}`} > <Flag name='us' /></Menu.Item>
-              <Menu.Item position='right'>
+              <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
               <Menu.Item>
@@ -247,7 +247,7 @@ class DesktopContainer extends Component {
               // inverted={!fixed}
               // pointing={!fixed}
               // secondary={!fixed}
-              size='large'
+              size="large"
             >
               <Container>
                 {/* <Menu.Item as="a" href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
@@ -256,7 +256,7 @@ class DesktopContainer extends Component {
                 <Menu.Item as="a" href='/es/' style={{ right: '0px'}}>
                   <Image src={SideLogo} size='small' />
                 </Menu.Item>
-                <Menu.Item position='right' as="a" href='/es/'>INICIO</Menu.Item>
+                <Menu.Item position="right" as="a" href='/es/'>INICIO</Menu.Item>
                 <Menu.Item style={{padding: "0em 0em"}}></Menu.Item>
                 <Menu.Item as="a" href='/es/about'>SOBRE NOSOTROS</Menu.Item>
                 <Menu.Item as="a" href='/es/products'>PRODUCTOS</Menu.Item>
@@ -316,7 +316,7 @@ class MobileContainer extends Component {
         {/* <Favicon url={Favicon} /> */}
         <Layout title="Solitrade Group"/>
         <Sidebar.Pushable>
-          <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
+          <Sidebar as={Menu} animation="uncover" inverted vertical visible={sidebarOpened}>
             {/* <Menu.Item as="a" href='https://www.linkedin.com/company/solitrade-group'><Link href='https://www.linkedin.com/company/solitrade-group'> <Icon name='linkedin in'/></Link></Menu.Item> */}
             {/* <Menu.Item as="a" href='/es/'><Image src='http://solitrade.com/images/logo-1.png' size='tiny'/></Menu.Item> */}
             {/* <Menu.Item as="a" href=''><Flag name='es' /></Menu.Item>
@@ -348,24 +348,24 @@ class MobileContainer extends Component {
           >
             <Segment
               inverted
-              textAlign='center'
+              textAlign="center"
               style={{ padding: '0em 0em' }}
               vertical
               basic
             >
-                <Menu inverted secondary size='large'>
+                <Menu inverted secondary size="large">
                   <Menu.Item onClick={this.handleToggle}>
-                    <Icon name="sidebar" size='large' />
+                    <Icon name="sidebar" size="large" />
                   </Menu.Item>
-                  <Menu.Item as="a" href='/es/' position='right'>
+                  <Menu.Item as="a" href='/es/' position="right">
                     {/* <Icon name='phone'/> +1-864-498-8691  /
                     <Icon name='mail'/> info@solitrade.com */}
                     <Image src={Name} size='small' />
                   </Menu.Item>
-                  <Menu.Item as="a" href='/es/' position='right'>
+                  <Menu.Item as="a" href='/es/' position="right">
                     {/* <Icon name='phone'/> +1-864-498-8691  /
                     <Icon name='mail'/> info@solitrade.com */}
-                    <Image src={SimpleLogo} size='mini' />
+                    <Image src={SimpleLogo} size="mini" />
                   </Menu.Item>
                 </Menu>
             </Segment>
