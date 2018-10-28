@@ -1,30 +1,22 @@
 import axios from 'axios'
 import React from 'react'
 
-function get_link(lenguage){
-  if (lenguage == "en"){
-    return "events";
-  } else {
-    return "eventos";
-  }
-}
-
 export default {
   // siteRoot: 'https://solitrade.netlify.com/',
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
-    <Html lang="en-US" prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#'>
+    <Html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
       <Head>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <meta charSet="UTF-8" />
-        <meta property='og:title' content='Solitrade Group' />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://solitrade.netlify.com/' />
-        <meta property='og:image' content='https://solitrade.netlify.com/static/logo.e70ee3ee.png' />
-        <meta property='og:description' content='Solitrade Group' />
-        <meta property='og:site_name' content='Solitrade' />
-        <meta property='og:locale' content='es-MX' />
-        <meta property='fb:admins' content='' />
-        <meta property='fb:app_id' content='' />
+        <meta property="og:title" content="Solitrade Group" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://solitrade.netlify.com/" />
+        <meta property="og:image" content="https://solitrade.netlify.com/static/logo.e70ee3ee.png" />
+        <meta property="og:description" content="Solitrade Group" />
+        <meta property="og:site_name" content="Solitrade" />
+        <meta property="og:locale" content="es-MX" />
+        <meta property="fb:admins" content="" />
+        <meta property="fb:app_id" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body>{children}</Body>
@@ -46,23 +38,23 @@ export default {
         children: [
           {
             path: '/contact',
-            component: 'src/containers/en/ContactUs'
+            component: 'src/containers/en/ContactUs',
           },
           {
             path: '/products',
-            component: 'src/containers/en/Products'
+            component: 'src/containers/en/Products',
           },
           {
             path: '/community',
-            component: 'src/containers/en/Community'
+            component: 'src/containers/en/Community',
           },
           {
             path: '/about',
-            component: 'src/containers/en/AboutUs'
+            component: 'src/containers/en/AboutUs',
           },
           {
             path: '/success',
-            component: 'src/containers/en/Success'
+            component: 'src/containers/en/Success',
           },
           {
             path: '/events',
@@ -119,19 +111,19 @@ export default {
         children: [
           {
             path: '/contact',
-            component: 'src/containers/es/ContactUs'
+            component: 'src/containers/es/ContactUs',
           },
           {
             path: '/products',
-            component: 'src/containers/es/Products'
+            component: 'src/containers/es/Products',
           },
           {
             path: '/community',
-            component: 'src/containers/es/Community'
+            component: 'src/containers/es/Community',
           },
           {
             path: '/about',
-            component: 'src/containers/es/AboutUs'
+            component: 'src/containers/es/AboutUs',
           },
           {
             path: '/events',
@@ -180,7 +172,7 @@ export default {
               brochures,
             }),
           },
-        ]
+        ],
       },
       {
         is404: true,

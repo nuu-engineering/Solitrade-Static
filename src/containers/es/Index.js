@@ -352,7 +352,7 @@ class MobileContainer extends Component {
 
   handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
 
-  render() {
+  render () {
     const { children } = this.props
     const { sidebarOpened } = this.state
 
@@ -398,18 +398,18 @@ class MobileContainer extends Component {
               vertical
               basic
             >
-                <Menu inverted pointing size="large">
-                  <Menu.Item onClick={this.handleToggle}>
-                    <Icon name="sidebar" size="large" />
-                  </Menu.Item>
-                  <Menu.Item as="a" href="/"><Flag name='us' /></Menu.Item>
-                  <Menu.Item as="a" href='/es/' position="right">
-                    {/* <Icon name='phone'/> +1-864-498-8691  /
-                    <Icon name='mail'/> info@solitrade.com */}
-                    <Image src={SimpleLogo} size="mini" />
-                  </Menu.Item>
+              <Menu inverted pointing size="large">
+                <Menu.Item onClick={this.handleToggle}>
+                  <Icon name="sidebar" size="large" />
+                </Menu.Item>
+                <Menu.Item as="a" href="/"><Flag name='us' /></Menu.Item>
+                <Menu.Item as="a" href='/es/' position="right">
+                  {/* <Icon name='phone'/> +1-864-498-8691  /
+                  <Icon name='mail'/> info@solitrade.com */}
+                  <Image src={SimpleLogo} size="mini" />
+                </Menu.Item>
 
-                </Menu>
+              </Menu>
               <HomepageHeading mobile />
             </Segment>
 
