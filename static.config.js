@@ -29,7 +29,16 @@ export default {
   }),
   getRoutes: async () => {
     const { data: events } = await axios.get('https://sales.solitrade.com/json')
-    const { data: brochures } = await axios.get('https://sales.solitrade.com/brochures_json')
+    // const { data: brochures } = await axios.get('https://sales.solitrade.com/brochures_json')
+    let brochures = []
+    let brochuresNames = []
+    await axios.get('https://sales.solitrade.com/brochures_json').then(res => {
+      const { data = {} } = res
+      brochures = data
+      brochuresNames = brochures.brochures.map(bro => bro.name).reduce(
+        (x, y) => x.includes(y) ? x : [...x, y], [])
+      brochuresNames.push('GMX')
+    }).catch(err => console.log(err))
     // console.log(events)
     return [
       {
@@ -103,7 +112,7 @@ export default {
               brochures,
             }),
           },
-        ]
+        ],
       },
       {
         path: '/es',
@@ -143,35 +152,46 @@ export default {
           {
             path: '/brochures',
             component: 'src/containers/es/Brochures',
-          },
-          {
-            path: '/brochures/gmx',
-            component: 'src/containers/es/Garland',
             getData: () => ({
-              brochures,
+              brochuresNames,
             }),
+            children: brochuresNames.map(name => ({
+              path: `/${name.toLowerCase().trim()}`,
+              component: 'src/containers/es/BrochureDetail',
+              getData: () => ({
+                name,
+                brochures: brochures.brochures,
+              }),
+            })),
           },
-          {
-            path: '/brochures/knauf',
-            component: 'src/containers/es/Knauf',
-            getData: () => ({
-              brochures,
-            }),
-          },
-          {
-            path: '/brochures/silvercote',
-            component: 'src/containers/es/Silvercote',
-            getData: () => ({
-              brochures,
-            }),
-          },
-          {
-            path: '/brochures/insudry',
-            component: 'src/containers/es/InsuDry',
-            getData: () => ({
-              brochures,
-            }),
-          },
+          // {
+          //   path: '/brochures/gmx',
+          //   component: 'src/containers/es/Garland',
+          //   getData: () => ({
+          //     brochures,
+          //   }),
+          // },
+          // {
+          //   path: '/brochures/knauf',
+          //   component: 'src/containers/es/Knauf',
+          //   getData: () => ({
+          //     brochures,
+          //   }),
+          // },
+          // {
+          //   path: '/brochures/silvercote',
+          //   component: 'src/containers/es/Silvercote',
+          //   getData: () => ({
+          //     brochures,
+          //   }),
+          // },
+          // {
+          //   path: '/brochures/insudry',
+          //   component: 'src/containers/es/InsuDry',
+          //   getData: () => ({
+          //     brochures,
+          //   }),
+          // },
         ],
       },
       {
