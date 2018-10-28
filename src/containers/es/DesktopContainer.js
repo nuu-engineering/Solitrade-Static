@@ -1,39 +1,30 @@
 import {
   Button,
   Container,
-  Divider,
-  Grid,
-  Header,
   Icon,
   Image,
-  List,
   Menu,
   Responsive,
   Dropdown,
   Segment,
   Sidebar,
   Visibility,
-  Flag
+  Flag,
 } from 'semantic-ui-react'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Link } from 'react-static'
 import SimpleLogo from './../images/simple_logo.png'
 import Name from './../images/name.png'
 import SideLogo from './../images/sidenamelogo.png'
-import FavIcon from './../images/simple_logo.png'
-import Favicon from 'react-favicon';
 
 class Layout extends React.Component {
-  constructor(props){
-    super(props);
-    document.title = this.props.title;
+  constructor (props) {
+    super(props)
+    document.title = this.props.title
   }
-  render(){
-    return(
-      <div>
-      </div>
-    );
+
+  render () {
+    return (<div />)
   }
 }
 
@@ -184,17 +175,12 @@ TabletContainer.propTypes = {
 
 
 class DesktopContainer extends Component {
-
-
-  constructor(props){
-    super(props);
-    this.state = {};
-  }
+  state = {}
 
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
-  render() {
+  render () {
     const { children, urlString } = this.props
     const { fixed } = this.state
     return (
@@ -307,7 +293,7 @@ class MobileContainer extends Component {
 
   handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
 
-  render() {
+  render () {
     const { children, urlString } = this.props
     const { sidebarOpened } = this.state
 
@@ -388,7 +374,7 @@ const ResponsiveContainer = ({ children, urlString }) => (
     <MobileContainer urlString={urlString}>{children}</MobileContainer>
     <TabletContainer urlString={urlString}>{children}</TabletContainer>
   </div>
-);
+)
 
 
 ResponsiveContainer.propTypes = {

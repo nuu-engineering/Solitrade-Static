@@ -3,7 +3,7 @@ import React from 'react'
 
 export default {
   // siteRoot: 'https://solitrade.netlify.com/',
-  Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
+  Document: ({ Html, Head, Body, children }) => (
     <Html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
       <Head>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -19,13 +19,14 @@ export default {
         <meta property="fb:app_id" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Body>{children}</Body>
+      <Body>
+        {children}
+      </Body>
     </Html>
   ),
   getSiteData: () => ({
     title: 'Solitrade',
     lastBuilt: Date.now(),
-
   }),
   getRoutes: async () => {
     const { data: events } = await axios.get('https://sales.solitrade.com/json')
@@ -83,34 +84,17 @@ export default {
           {
             path: '/brochures',
             component: 'src/containers/en/Brochures',
-          },
-          {
-            path: '/brochures/gmx',
-            component: 'src/containers/en/Garland',
             getData: () => ({
-              brochures,
+              brochuresNames,
             }),
-          },
-          {
-            path: '/brochures/knauf',
-            component: 'src/containers/en/Knauf',
-            getData: () => ({
-              brochures,
-            }),
-          },
-          {
-            path: '/brochures/silvercote',
-            component: 'src/containers/en/Silvercote',
-            getData: () => ({
-              brochures,
-            }),
-          },
-          {
-            path: '/brochures/insudry',
-            component: 'src/containers/en/InsuDry',
-            getData: () => ({
-              brochures,
-            }),
+            children: brochuresNames.map(name => ({
+              path: `/${name.toLowerCase().trim()}`,
+              component: 'src/containers/en/BrochureDetail',
+              getData: () => ({
+                name,
+                brochures: brochures.brochures,
+              }),
+            })),
           },
         ],
       },
@@ -164,34 +148,6 @@ export default {
               }),
             })),
           },
-          // {
-          //   path: '/brochures/gmx',
-          //   component: 'src/containers/es/Garland',
-          //   getData: () => ({
-          //     brochures,
-          //   }),
-          // },
-          // {
-          //   path: '/brochures/knauf',
-          //   component: 'src/containers/es/Knauf',
-          //   getData: () => ({
-          //     brochures,
-          //   }),
-          // },
-          // {
-          //   path: '/brochures/silvercote',
-          //   component: 'src/containers/es/Silvercote',
-          //   getData: () => ({
-          //     brochures,
-          //   }),
-          // },
-          // {
-          //   path: '/brochures/insudry',
-          //   component: 'src/containers/es/InsuDry',
-          //   getData: () => ({
-          //     brochures,
-          //   }),
-          // },
         ],
       },
       {
