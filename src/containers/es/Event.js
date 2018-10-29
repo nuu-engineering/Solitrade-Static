@@ -67,8 +67,8 @@ export default withRouteData(({ event }) => (
         <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
           {event.es_name}
           <hr style={{
-            width: "10%",
-            border: "1px solid #2185d0",
+            width: '10%',
+            border: '1px solid #2185d0',
           }}/>
         </Header>
       </Container>

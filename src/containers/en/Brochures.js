@@ -47,8 +47,8 @@ const PageLayout = () => (
         BRO<span style={{color:"#2185d0"}}>CHURES</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
-          width: "10%",
-          border: "1px solid #2185d0",
+          width: '10%',
+          border: '1px solid #2185d0',
         }}/>
       </Header>
     </Container>
@@ -61,16 +61,16 @@ const PageLayout = () => (
      >
       <Grid.Row>
         <Grid.Column>
-          <Image href='/brochures/knauf' centered src={Knauf} size='huge' />
+          <Image href='/brochures/knauf' centered src={Knauf} size="huge" />
         </Grid.Column>
         <Grid.Column>
-          <Image href='/brochures/silvercote' centered src={Silvercote} size='huge' />
+          <Image href='/brochures/silvercote' centered src={Silvercote} size="huge" />
         </Grid.Column>
         <Grid.Column>
-        <Image href='/brochures/insudry' centered src={Insudry} size='huge' />
+        <Image href='/brochures/insudry' centered src={Insudry} size="huge" />
         </Grid.Column>
         <Grid.Column>
-          <Image href='/brochures/gmx' centered src={GMX} size='huge' style={{ padding: '0em -30em' }} />
+          <Image href='/brochures/gmx' centered src={GMX} size="huge" style={{ padding: '0em -30em' }} />
         </Grid.Column>
       </Grid.Row>
     </Grid>

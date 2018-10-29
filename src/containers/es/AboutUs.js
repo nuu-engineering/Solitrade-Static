@@ -40,8 +40,8 @@ const PageLayout = () => (
         ACERCA DE <span style={{color:"#2185d0"}}>NOSOTROS</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
-          width: "10%",
-          border: "1px solid #2185d0",
+          width: '10%',
+          border: '1px solid #2185d0',
         }}/>
       </Header>
     </Container>
@@ -59,8 +59,8 @@ const PageLayout = () => (
           <Segment  basic>
             <Header as="h3">VENTAS Y MERCADOTECNIA</Header>
             <hr style={{
-              width: "10%",
-              border: "1px solid #2185d0",
+              width: '10%',
+              border: '1px solid #2185d0',
               marginLeft: 0,
               padding: '0% 1em'
             }}/>
@@ -74,8 +74,8 @@ const PageLayout = () => (
              </p>
              <Header as="h3">REPRESENTACIÓN GLOBAL DE MARCAS Y PRODUCTOS</Header>
              <hr style={{
-               width: "10%",
-               border: "1px solid #2185d0",
+               width: '10%',
+               border: '1px solid #2185d0',
                marginLeft: 0,
                padding: '0% 1em'
              }}/>

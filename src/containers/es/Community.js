@@ -39,8 +39,8 @@ const PageLayout = () => (
       <Header as='h1' style={{ fontSize: '2em', padding:"2em 0em" }}>
         NUESTRA <span style={{color:"#2185d0"}}>COMUNIDAD</span>
         <hr style={{
-          width: "10%",
-          border: "1px solid #2185d0",
+          width: '10%',
+          border: '1px solid #2185d0',
         }}/>
       </Header>
     </Container>
