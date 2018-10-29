@@ -40,8 +40,8 @@ const PageLayout = () => (
         THANKS FOR CONTACTING <span style={{color:"#2185d0"}}>US</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
-          width: "10%",
-          border: "1px solid #2185d0",
+          width: '10%',
+          border: '1px solid #2185d0',
         }}/>
       </Header>
     </Container>
