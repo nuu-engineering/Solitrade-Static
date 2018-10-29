@@ -441,8 +441,8 @@ const HomepageLayout = () => (
           WHAT WE <span style={{color:"#2185d0"}}>OFFER</span>
           {/* <Divider style={{color:"#2185d0"}}/> */}
           <hr style={{
-            width: "10%",
-            border: "1px solid #2185d0",
+            width: '10%',
+            border: '1px solid #2185d0',
           }}/>
         </Header>
       </Container>
@@ -454,7 +454,7 @@ const HomepageLayout = () => (
             <Header as="h3">INTERNATIONAL SALES AND MARKETING</Header>
             <hr style={{
               width: "40%",
-              border: "1px solid #2185d0",
+              border: '1px solid #2185d0',
             }}/>
             <Header as="h4">Global network of customers and suppliers.</Header>
           </Grid.Column>
@@ -463,7 +463,7 @@ const HomepageLayout = () => (
             <Header as="h3">FOREIGN MARKET EVALUATION</Header>
             <hr style={{
               width: "40%",
-              border: "1px solid #2185d0",
+              border: '1px solid #2185d0',
             }}/>
             <Header as="h4">Positioning products in the right market for success.</Header>
           </Grid.Column>
@@ -475,7 +475,7 @@ const HomepageLayout = () => (
             <Container style={{padding:"0em "}}>
               <hr style={{
                 width: "40%",
-                border: "1px solid #2185d0",
+                border: '1px solid #2185d0',
                 right: "1000px"
               }}/>
             </Container>
@@ -486,7 +486,7 @@ const HomepageLayout = () => (
             <Header as="h3">OUTSTANDING CUSTOMER SERVICE</Header>
             <hr style={{
               width: "40%",
-              border: "1px solid #2185d0",
+              border: '1px solid #2185d0',
               padding: "0em 0em"
             }}/>
             <Header as="h4">We focus on our clients complete trust and satisfaction.</Header>

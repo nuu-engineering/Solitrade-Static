@@ -36,8 +36,8 @@ const PageLayout = () => (
         OUR <span style={{color:"#2185d0"}}>COMMUNITY</span>
         {/* <Divider style={{color:"#2185d0"}}/> */}
         <hr style={{
-          width: "10%",
-          border: "1px solid #2185d0",
+          width: '10%',
+          border: '1px solid #2185d0',
         }}/>
       </Header>
     </Container>
