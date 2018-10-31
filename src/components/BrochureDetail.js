@@ -12,7 +12,7 @@ const path='https://sales.solitrade.com/uploads/'
 function formatBrochures (brochures, name) {
   const formatedBrochures = brochures.map(brochure => {
     if (brochure.name === name || (name === 'GMX' && brochure.name === 'Garland')) {
-      return <List.Item key={brochure.id} as="a" href={path + brochure.url}>{brochure.url}</List.Item>
+      return <List.Item key={brochure.id} as="a" href={path + brochure.url} target="_blank">{brochure.url}</List.Item>
     }
     return ''
   })
