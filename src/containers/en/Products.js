@@ -54,14 +54,14 @@ const PageLayout = () => (
         <Grid.Column>
           <Image src={Insulation} centered size="large"/>
           <Segment basic >
-            <Header as="h3">THERMAL AND ACCOUSTICAL INSULTATION</Header>
+            <Header as="h3">THERMAL AND ACOUSTIC INSULATION</Header>
             <hr style={{
               width: '10%',
               border: '1px solid #2185d0',
               marginLeft: 0,
               padding: '0% 1em',
             }} />
-            <Header as="h5">Exclusive sales representative of Knauf Insulation North America products for Latin America.</Header>
+            <Header as="h5">Exclusive sales representative of Knauf Insulation North America products for Latin America</Header>
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
@@ -84,7 +84,7 @@ const PageLayout = () => (
               marginLeft: 0,
               padding: '0% 1em',
             }}/>
-            <Header as="h5">Distribution of waterproofing products, coatings and acoustical mats. </Header>
+            <Header as="h5">Distribution of waterproofing products, coatings and acoustical mats</Header>
           </Segment>
           <Grid>
             <Grid.Row columns={3}>

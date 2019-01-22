@@ -46,7 +46,7 @@ class Footer extends Component {
                   <Grid.Column width={4}>
                     <Header inverted as="h4" content='PRODUCTS' />
                     <List link inverted>
-                      <List.Item as="a" href="/products">Thermal and Accoustical Insulation</List.Item>
+                      <List.Item as="a" href="/products">Thermal and Acoustic Insulation</List.Item>
                       <List.Item as="a" href="/products" >Waterproofing Coatings and Systems</List.Item>
                       <List.Item as="a" href="/products">Glass and other products</List.Item>
                     </List>
@@ -115,7 +115,7 @@ class MobileFooter extends Component {
                   <Grid.Column width={8}>
                     <Header inverted as="h4" content='PRODUCTS' />
                     <List link inverted>
-                      <List.Item as="a" href="/products">Thermal and Accoustical Insulation</List.Item>
+                      <List.Item as="a" href="/products">Thermal and Acoustic Insulation</List.Item>
                       <List.Item as="a" href="/products" >Waterproofing Coatings and Systems</List.Item>
                       <List.Item as="a" href="/products">Glass and other products</List.Item>
                     </List>

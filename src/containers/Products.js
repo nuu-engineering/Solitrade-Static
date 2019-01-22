@@ -55,51 +55,49 @@ const PageLayout = () => (
         <Grid.Column width={5}>
           <Image src={Insulation} centered size="large"/>
           <Segment basic >
-              <Header as="h3">THERMAL AND ACCOUSTICAL INSULTATION</Header>
-              <Divider />
-              <Header as='h5'>Exclusive sales representative of Knauf Insulation
-                North America products for Latin America.</Header>
-                <Grid>
-                  <Grid.Row columns={2}>
-                    <Grid.Column>
-                      <Image centered src={Knauf} size='tiny' />
-                    </Grid.Column>
-                    <Grid.Column>
-                      <Image centered src={Silvercote} size='tiny' />
-                    </Grid.Column>
-                  </Grid.Row>
-                </Grid>
-          </Segment>
-        </Grid.Column>
-          <Grid.Column width={5}>
-            <Image src={Other} centered size="large"/>
-            <Segment basic >
-            <Header as="h3">WATERPROOFING COATINGS AND SYSTEMS</Header>
+            <Header as="h3">THERMAL AND ACOUSTIC INSULATION</Header>
             <Divider />
-            <Header as="h3">Distribution of waterproofing products,
-              coatings and acoustical mats. </Header>
-            </Segment>
+            <Header as='h5'>Exclusive sales representative of Knauf Insulation North America products for Latin America</Header>
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image centered src={Insudry} size='tiny' />
+                  <Image centered src={Knauf} size='tiny' />
                 </Grid.Column>
                 <Grid.Column>
-                  <Image centered src={GMX} size='tiny' style={{ padding: '0em -30em' }} />
+                  <Image centered src={Silvercote} size='tiny' />
                 </Grid.Column>
               </Grid.Row>
             </Grid>
-          </Grid.Column>
-          <Grid.Column width={5}>
-            <Image src={Glass} centered size="large"/>
-            <Segment basic >
-            <Header as="h3">GLASS AND OTHER BUILDING MATERIALS</Header>
-            <Divider />
-            <Header as="h3">We distribute high quality glass at competitive
-              prices.</Header>
-            </Segment>
-          </Grid.Column>
-        </Grid.Row>
+          </Segment>
+        </Grid.Column>
+        <Grid.Column width={5}>
+          <Image src={Other} centered size="large"/>
+          <Segment basic >
+          <Header as="h3">WATERPROOFING COATINGS AND SYSTEMS</Header>
+          <Divider />
+          <Header as="h3">Distribution of waterproofing products, coatings and acoustical mats</Header>
+          </Segment>
+          <Grid>
+            <Grid.Row columns={2}>
+              <Grid.Column>
+                <Image centered src={Insudry} size='tiny' />
+              </Grid.Column>
+              <Grid.Column>
+                <Image centered src={GMX} size='tiny' style={{ padding: '0em -30em' }} />
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Grid.Column>
+        <Grid.Column width={5}>
+          <Image src={Glass} centered size="large"/>
+          <Segment basic >
+          <Header as="h3">GLASS AND OTHER BUILDING MATERIALS</Header>
+          <Divider />
+          <Header as="h3">We distribute high quality glass at competitive
+            prices.</Header>
+          </Segment>
+        </Grid.Column>
+      </Grid.Row>
     </Grid>
     <Footer />
   </ResponsiveContainer>

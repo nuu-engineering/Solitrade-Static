@@ -48,7 +48,7 @@ class TabletFooter extends Component {
                     <Header inverted as="h4" content='PRODUCTOS' />
                     <List link inverted>
                       <List.Item as="a" href="/es/products">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as="a" href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as="a" href="/es/products">Impermeabilizantes</List.Item>
                       <List.Item as="a" href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
@@ -114,7 +114,7 @@ class Footer extends Component {
                     <Header inverted as="h4" content='PRODUCTOS' />
                     <List link inverted>
                       <List.Item as="a" href="/es/products">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as="a" href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as="a" href="/es/products">Impermeabilizantes</List.Item>
                       <List.Item as="a" href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
@@ -184,7 +184,7 @@ class MobileFooter extends Component {
                     <Header inverted as="h4" content='PRODUCTOS' />
                     <List link inverted>
                       <List.Item as="a" href="/es/products">Aislamiento Térmico y Acústico</List.Item>
-                      <List.Item as="a" href="/es/products">Recubrimientos a Prueba de Agua</List.Item>
+                      <List.Item as="a" href="/es/products">Impermeabilizantes</List.Item>
                       <List.Item as="a" href="/es/products">Vidrio y Otros Materiales</List.Item>
                     </List>
                   </Grid.Column>
