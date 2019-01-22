@@ -77,7 +77,7 @@ const PageLayout = () => (
         <Grid.Column>
           <Image src={Other} centered size="large"/>
           <Segment basic >
-            <Header as="h3">RECUBRIMIENTOS A PRUEBA DE AGUA</Header>
+            <Header as="h3">IMPERMEABILIZANTES</Header>
             <hr style={{
               width: '10%',
               border: '1px solid #2185d0',

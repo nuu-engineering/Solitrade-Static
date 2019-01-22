@@ -69,60 +69,60 @@ export default class extends React.Component {
           <Grid style={{paddingBottom: "10em"}}>
             <Grid.Row columns={3}>
               <Grid.Column width={10}>
-                 <form
-                    name="contact"
-                    method="post"
-                    action="/success"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    onSubmit={this.handleSubmit}
-                    class="ui form"
-                  >
-                     <input type="hidden" name="form-name" value="contact" />
-                     <p hidden>
-                       <label>
-                         Don’t fill this out:{" "}
-                         <input name="bot-field" onChange={this.handleChange} />
-                       </label>
-                     </p>
-                     <div class="equal width fields">
-                           <div class="field"><label>Name</label>
-                             <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Name" name="name" type="text" required/></div>
-                           </div>
-                           <div class="field"><label>Email</label>
-                             <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Email" name="email" type="text" required/></div>
-                           </div>
-                           <div class="field"><label>Phone</label>
-                             <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Phone" name="phone" type="text" required/></div>
-                           </div>
-                         </div>
-                         <div class="field"><label>Subject</label>
-                           <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Subject" name="subject" type="text" required/></div>
-                         </div>
-                         <div class="field"><label>About</label><textarea onChange={this.handleChange} placeholder="Tell us more" name="message" rows="3" required></textarea></div>
-                         <button class="ui button" type="submit">Submit</button>
-                       </form>
-               </Grid.Column>
-               <Grid.Column  style={{ padding: '0em 1em' }} width={6}>
-                     <Header as="h4" content='CONTACT INFO' />
-                         <Grid.Column style={{ padding: '1em 0em' }}>
-                           <Icon name='phone' color='blue' size="big" />
-                            +1-864-498-8691
-                         </Grid.Column>
-                         <Grid.Column style={{ padding: '1em 0em' }}>
-                           <Icon name='mail' color='blue' size="big"/>
-                            info@solitrade.com
-                         </Grid.Column>
-                         <Grid.Column style={{ padding: '1em 0em' }}>
-                           <Icon name='point' color='blue' size="big"/>
-                            CHARLOTTE, NC 28203 (USA)
-                         </Grid.Column>
-                 </Grid.Column>
-             </Grid.Row>
-           </Grid>
-         </Container>
-       <Footer />
-     </DesktopContainer>
-    )
+                <form
+                  name="contact"
+                  method="post"
+                  action="/success"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={this.handleSubmit}
+                  class="ui form"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p hidden>
+                    <label>
+                      Don’t fill this out:{" "}
+                      <input name="bot-field" onChange={this.handleChange} />
+                    </label>
+                  </p>
+                  <div class="equal width fields">
+                    <div class="field"><label>Name</label>
+                      <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Name" name="name" type="text" required/></div>
+                    </div>
+                    <div class="field"><label>Email</label>
+                      <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Email" name="email" type="text" required/></div>
+                    </div>
+                    <div class="field"><label>Phone</label>
+                      <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Phone" name="phone" type="text" required/></div>
+                    </div>
+                  </div>
+
+                  <div class="field"><label>Subject</label>
+                    <div class="ui fluid input"><input onChange={this.handleChange} placeholder="Subject" name="subject" type="text" required/></div>
+                  </div>
+                  <div class="field"><label>About</label><textarea onChange={this.handleChange} placeholder="Tell us more" name="message" rows="3" required></textarea></div>
+                  <button class="ui button" type="submit">Submit</button>
+                </form>
+              </Grid.Column>
+              <Grid.Column  style={{ padding: '0em 1em' }} width={6}>
+                <Header as="h4" content='CONTACT INFO' />
+                <Grid.Column style={{ padding: '1em 0em' }}>
+                  <Icon name='phone' color='blue' size="big" />
+                  +1-864-498-8691
+                </Grid.Column>
+                <Grid.Column style={{ padding: '1em 0em' }}>
+                  <Icon name='mail' color='blue' size="big"/>
+                  info@solitrade.com
+                </Grid.Column>
+                <Grid.Column style={{ padding: '1em 0em' }}>
+                  <Icon name='point' color='blue' size="big"/>
+                  CHARLOTTE, NC 28203 (USA)
+                </Grid.Column>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Container>
+        <Footer />
+      </DesktopContainer>);
   }
 }
