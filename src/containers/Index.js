@@ -237,18 +237,18 @@ const HomepageLayout = () => (
             <Image src='http://solitrade.com/images/bullets/InternationalSales.jpg' size="medium" floated="left" />
             <Header as="h3">GLOBAL LOGISTICS EXPERTISE</Header>
             <Divider section />
-            <Header as="h4">Efficient, secure and reliable delveries.</Header>
+            <Header as="h4">Efficient, secure and reliable delveries</Header>
           </Grid.Column>
 
           <Grid.Column width={8}>
             <Image src='http://solitrade.com/images/bullets/GlobalLogistics.jpg' size="medium" floated="left"/>
             <Header as="h3">INTERNATIONAL SALES AND MARKETING</Header>
             <Divider section />
-            <Header as="h4">Global network of customers and suppliers.</Header>
+            <Header as="h4">Global network of customers and suppliers</Header>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
 
+        <Grid.Row>
           <Grid.Column width={8}>
             <Image src='http://solitrade.com/images/bullets/CustomerService.jpg' size="medium" floated="left"/>
             <Header as="h3">OUTSTANDING CUSTOMER SERVICE</Header>
@@ -259,7 +259,7 @@ const HomepageLayout = () => (
             <Image src='http://solitrade.com/images/bullets/Valuation.jpg' size="medium" floated="left" />
             <Header as="h3">FOREIGN MARKET VALUATION</Header>
             <Divider section />
-            <Header as="h4">Positioning products in the right market for success.</Header>
+            <Header as="h4">Positioning products in the right market for success</Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>
