@@ -76,7 +76,7 @@ class TabletFooter extends Component {
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
             <Container textAlign="center">
-              Copyright © 2018 Solitrade Group. All Rights Reserved.
+              Copyright © 2019 Solitrade Group. All Rights Reserved.
             </Container>
 
           </Segment>
@@ -143,7 +143,7 @@ class Footer extends Component {
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
             <Container textAlign="center">
-              Copyright © 2018 Solitrade Group. All Rights Reserved.
+              Copyright © 2019 Solitrade Group. All Rights Reserved.
             </Container>
 
           </Segment>
@@ -213,7 +213,7 @@ class MobileFooter extends Component {
           </Segment>
           <Segment color='black' inverted vertical style={{ padding: '2em 0em' }}>
             <Container textAlign="center">
-              Copyright © 2018 Solitrade Group. All Rights Reserved.
+              Copyright © 2019 Solitrade Group. All Rights Reserved.
             </Container>
 
           </Segment>
