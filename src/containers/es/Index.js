@@ -160,7 +160,7 @@ class DesktopContainer extends Component {
               <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item as='a' href='/es/contact'>
                 <Icon name='mail'/> info@solitrade.com
               </Menu.Item>
               <Menu.Item>
@@ -270,7 +270,7 @@ class TabletContainer extends Component {
               <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item as='a' href='/es/contact'>
                 <Icon name='mail'/> info@solitrade.com
               </Menu.Item>
               <Menu.Item>
@@ -458,7 +458,7 @@ const HomepageLayout = () => (
               width: "40%",
               border: '1px solid #2185d0',
             }}/>
-            <Header as="h4">Red global de clientes y proveedores.</Header>
+            <Header as="h4">Red global de clientes y proveedores</Header>
           </Grid.Column>
           <Grid.Column width={8}>
             <Image src={Valuation} size="medium" floated="left"/>
@@ -467,7 +467,7 @@ const HomepageLayout = () => (
               width: "40%",
               border: '1px solid #2185d0',
             }}/>
-            <Header as="h4">Posicionamiento de productos en el mercado correcto para el éxito.</Header>
+            <Header as="h4">Posicionamiento de productos en el mercado correcto para el éxito</Header>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -481,7 +481,7 @@ const HomepageLayout = () => (
                 right: "1000px"
               }}/>
             </Container>
-            <Header as="h4">Entregas eficientes fiables y seguras.</Header>
+            <Header as="h4">Entregas eficientes fiables y seguras</Header>
           </Grid.Column>
           <Grid.Column width={8}>
             <Image src={CostumerService} size="medium" floated="left" />
@@ -491,7 +491,7 @@ const HomepageLayout = () => (
               border: '1px solid #2185d0',
               padding: "0em 0em"
             }}/>
-            <Header as="h4">Nos centramos en la total confianza y satisfacción de nuestros clientes</Header>
+            <Header as="h4">Nos centramos en la total confianza y satisfacción de nuestros clientes.</Header>
           </Grid.Column>
         </Grid.Row>
       </Grid>

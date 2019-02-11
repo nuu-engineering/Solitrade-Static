@@ -160,7 +160,7 @@ class DesktopContainer extends Component {
               <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item as='a' href='/contact'>
                 <Icon name='mail'/> info@solitrade.com
               </Menu.Item>
               <Menu.Item>
@@ -269,7 +269,7 @@ class TabletContainer extends Component {
               <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item as='a' href='/contact'>
                 <Icon name='mail'/> info@solitrade.com
               </Menu.Item>
               <Menu.Item>
@@ -456,7 +456,7 @@ const HomepageLayout = () => (
               width: "40%",
               border: '1px solid #2185d0',
             }}/>
-            <Header as="h4">Global network of customers and suppliers.</Header>
+            <Header as="h4">Global network of customers and suppliers</Header>
           </Grid.Column>
           <Grid.Column width={8}>
             <Image src={Valuation} size="medium" floated="left"/>
@@ -465,7 +465,7 @@ const HomepageLayout = () => (
               width: "40%",
               border: '1px solid #2185d0',
             }}/>
-            <Header as="h4">Positioning products in the right market for success.</Header>
+            <Header as="h4">Positioning products in the right market for success</Header>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -479,7 +479,7 @@ const HomepageLayout = () => (
                 right: "1000px"
               }}/>
             </Container>
-            <Header as="h4">Efficient, secure and reliable delveries.</Header>
+            <Header as="h4">Efficient, secure and reliable delveries</Header>
           </Grid.Column>
           <Grid.Column width={8}>
             <Image src={CostumerService} size="medium" floated="left" />

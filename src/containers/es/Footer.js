@@ -59,7 +59,7 @@ class TabletFooter extends Component {
                         <Icon name='phone' />
                          +1-864-498-8691
                       </List.Item>
-                      <List.Item>
+                      <List.Item as='a' href='/es/contact'>
                         <Icon name='mail' />
                          info@solitrade.com
                       </List.Item>
@@ -125,7 +125,7 @@ class Footer extends Component {
                         <Icon name='phone' />
                          +1-864-498-8691
                       </List.Item>
-                      <List.Item>
+                      <List.Item as='a' href='/es/contact'>
                         <Icon name='mail' />
                          info@solitrade.com
                       </List.Item>
@@ -195,7 +195,7 @@ class MobileFooter extends Component {
                         <Icon name='phone' />
                          +1-864-498-8691
                       </List.Item>
-                      <List.Item>
+                      <List.Item as='a' href='/es/contact'>
                         <Icon name='mail' />
                          info@solitrade.com
                       </List.Item>
