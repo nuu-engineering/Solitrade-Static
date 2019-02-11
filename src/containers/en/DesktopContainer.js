@@ -121,7 +121,7 @@ class TabletContainer extends Component {
               <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item as='a' href='/contact'>
                 <Icon name='mail'/> info@solitrade.com
               </Menu.Item>
               <Menu.Item>
@@ -232,7 +232,7 @@ class DesktopContainer extends Component {
               <Menu.Item position="right">
                 <Icon name='phone'/> +1-864-498-8691
               </Menu.Item>
-              <Menu.Item>
+              <Menu.Item as='a' href='/contact'>
                 <Icon name='mail'/> info@solitrade.com
               </Menu.Item>
               <Menu.Item>
