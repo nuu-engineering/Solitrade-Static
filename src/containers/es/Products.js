@@ -17,6 +17,8 @@ import Silvercote from './../images/logo-silvercote.png'
 import Insudry from './../images/insudry.png'
 import GMX from './../images/gmx.png'
 import Tufflex from './../images/tufflex.png'
+import SoliBlockWall from '../images/SoliBlock-Wall.png'
+import SoliBlockFloor from '../images/SoliBlock-Floor.png'
 
 const ResponsiveContainer = ({ children, urlString }) => (
   <div>
@@ -47,7 +49,7 @@ const PageLayout = () => (
       container
       stackable
       divided="vertically"
-      style={{ padding: '0% 0%' }}
+      style={{ padding: '3% 0%' }}
       columns="3"
      >
       <Grid.Row>
@@ -96,6 +98,14 @@ const PageLayout = () => (
               </Grid.Column>
               <Grid.Column>
                 <Image href="https://www.tufflexpolymers.com/" centered src={Tufflex} size="huge" />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={2} centered>
+              <Grid.Column>
+                <Image centered src={SoliBlockWall} size="huge" />
+              </Grid.Column>
+              <Grid.Column>
+                <Image centered src={SoliBlockFloor} size="huge" />
               </Grid.Column>
             </Grid.Row>
           </Grid>
