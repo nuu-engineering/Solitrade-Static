@@ -10,10 +10,12 @@ import { withRouteData } from 'react-static'
 
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-import Knauf from './../images/knauf.png'
-import Silvercote from './../images/logo-silvercote.png'
-import Insudry from './../images/insudry.png'
-import GMX from './../images/gmx.png'
+import Knauf from '../images/knauf.png'
+import Silvercote from '../images/logo-silvercote.png'
+import Insudry from '../images/insudry.png'
+import GMX from '../images/gmx.png'
+import SoliBlockWall from '../images/SoliBlock-Wall.png'
+import SoliBlockFloor from '../images/SoliBlock-Floor.png'
 
 const ResponsiveContainer = ({ children, urlString }) => (
   <div>
@@ -132,6 +134,27 @@ const PageLayout = () => (
             style={{ padding: '0em -30em' }}
           />
         </Grid.Column>
+      </Grid.Row>
+
+      <Grid.Row>
+        <Grid.Column />
+        <Grid.Column>
+          <Image
+            // href="/brochures/insudry"
+            centered
+            src={SoliBlockWall}
+            size="huge"
+          />
+        </Grid.Column>
+        <Grid.Column>
+          <Image
+            // href="/brochures/gmx"
+            centered
+            src={SoliBlockFloor}
+            size="huge"
+          />
+        </Grid.Column>
+        <Grid.Column />
       </Grid.Row>
     </Grid>
     <Footer />
