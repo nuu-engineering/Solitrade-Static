@@ -9,14 +9,16 @@ import {
 } from 'semantic-ui-react'
 import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
-import Other from './../images/otherproducts.png'
-import Glass from './../images/glass.png'
-import Insulation from './../images/insulation.png'
-import Knauf from './../images/knauf.png'
-import Silvercote from './../images/logo-silvercote.png'
-import Insudry from './../images/insudry.png'
-import GMX from './../images/gmx.png'
-import Tufflex from './../images/tufflex.png'
+import Other from '../images/otherproducts.png'
+import Glass from '../images/glass.png'
+import Insulation from '../images/insulation.png'
+import Knauf from '../images/knauf.png'
+import Silvercote from '../images/logo-silvercote.png'
+import Insudry from '../images/insudry.png'
+import GMX from '../images/gmx.png'
+import Tufflex from '../images/tufflex.png'
+import SoliBlockWall from '../images/SoliBlock-Wall.png'
+import SoliBlockFloor from '../images/SoliBlock-Floor.png'
 
 const ResponsiveContainer = ({ children, urlString }) => (
   <div>
@@ -92,10 +94,18 @@ const PageLayout = () => (
                 <Image href="http://insudry.com/" centered src={Insudry} size="huge" />
               </Grid.Column>
               <Grid.Column>
-                <Image href="https://www.gmxco.com/about/about-us.html" centered src={GMX} size="huge" style={{ padding: '0em -30em' }}/>
+                <Image href="https://www.gmxco.com/about/about-us.html" centered src={GMX} size="huge" />
               </Grid.Column>
               <Grid.Column>
                 <Image href="https://www.tufflexpolymers.com/" centered src={Tufflex} size="huge" />
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row columns={2} centered>
+              <Grid.Column>
+                <Image centered src={SoliBlockWall} size="huge" />
+              </Grid.Column>
+              <Grid.Column>
+                <Image centered src={SoliBlockFloor} size="huge" />
               </Grid.Column>
             </Grid.Row>
           </Grid>

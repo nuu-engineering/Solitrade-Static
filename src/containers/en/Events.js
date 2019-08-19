@@ -22,15 +22,17 @@ import Footer from './Footer'
 import { withRouteData, Link } from 'react-static'
 //
 
-var path='https://sales.solitrade.com'
-function get_link(lenguage){
+const path = 'https://sales.solitrade.com'
+
+function get_link (lenguage) {
   if (lenguage == "en"){
     return "events";
   } else {
     return "eventos";
   }
 }
-function format_events_html(events){
+
+function format_events_html (events) {
   const formatted_events =
     events.map(event => (
       <div class="ui card">
@@ -38,18 +40,18 @@ function format_events_html(events){
           <img height="210" width="100%" border-radius="30%" src={path + event.images[0].src} />
         </div>
         <div class="content">
-          <a class="header" href={event.name.replace(/\s+/g, '-').toLowerCase() + '/'}>{event.name}</a>
+          <a class="header" href={`/events/${event.name.replace(/\s+/g, '-').toLowerCase()}/`}>{event.name}</a>
           <div class="description">
             {event.description}
           </div>
         </div>
       </div>
-  ))
+    ))
 
   return formatted_events
 }
 
-function format_events_props(events){
+function format_events_props (events) {
   const formatted_events =
     events.map(event => (
       {
@@ -58,9 +60,9 @@ function format_events_props(events){
         // href: event.id + '/',
         // href: '/events/' + get_link(event.language) + '/' + event.name.replace(/\s+/g, '-').toLowerCase() + '/',
         href: event.name.replace(/\s+/g, '-').toLowerCase() + '/',
-        image: path + event.images[0].src
+        image: path + event.images[0].src,
       }
-  ))
+    ))
 
   return formatted_events
 }
