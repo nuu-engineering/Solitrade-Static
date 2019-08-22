@@ -11,7 +11,7 @@ const path='https://sales.solitrade.com/uploads/'
 
 function formatBrochures (brochures, name) {
   const formatedBrochures = brochures.map(brochure => {
-    if (brochure.name === name || (name === 'GMX' && brochure.name === 'Garland')) {
+    if (brochure.name === name) {
       return <List.Item key={brochure.id} as="a" href={path + brochure.url} target="_blank">{brochure.url}</List.Item>
     }
     return ''
@@ -20,18 +20,34 @@ function formatBrochures (brochures, name) {
   return formatedBrochures
 }
 
-const TitleSpan = ({ name }) => (
-  <React.Fragment>
-    { name === 'Knauf'
-      ? <span>KNA<span style={{ color: '#2185d0' }}>UF</span></span>
-      : name === 'Silvercote'
-        ? <span>SILVER<span style={{ color: '#2185d0' }}>COTE</span></span>
-        : name === 'InsuDry'
-          ? <span>INSU<span style={{ color: '#2185d0' }}>DRY</span></span>
-          : <span style={{ color: '#2185d0' }}>{name.toUpperCase()}</span>
-    }
-  </React.Fragment>
-)
+const TitleSpan = ({ name }) => {
+  let title = null
+  switch (name) {
+    case 'Knauf':
+      title = <span>KNA<span style={{ color: '#2185d0' }}>UF</span></span>
+      break
+    case 'Silvercote':
+      title = <span>SILVER<span style={{ color: '#2185d0' }}>COTE</span></span>
+      break
+    case 'InsuDry':
+      title = <span>INSU<span style={{ color: '#2185d0' }}>DRY</span></span>
+      break
+    case 'SoliBlock Wall':
+      title = <span>SoliBlock<span style={{ color: '#2185d0' }}> Wall HP+ Acoustic Mat</span></span>
+      break
+    case 'SoliBlock Floor':
+      title = <span>SoliBlock<span style={{ color: '#2185d0' }}> Floor HP+ Acoustic Mat</span></span>
+      break
+    default:
+      title = <span style={{ color: '#2185d0' }}>{name.toUpperCase()}</span>
+      break
+  }
+  return (
+    <React.Fragment>
+      {title}
+    </React.Fragment>
+  )
+}
 
 export default withRouteData(({ name, brochures }) => (
   <React.Fragment>

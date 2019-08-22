@@ -140,7 +140,7 @@ const PageLayout = ({ brochuresNames }) => (
         <Grid.Column />
         <Grid.Column>
           <Image
-            // href="/brochures/insudry"
+            href="/es/brochures/soliblock-wall"
             centered
             src={SoliBlockWall}
             size="huge"
@@ -148,7 +148,7 @@ const PageLayout = ({ brochuresNames }) => (
         </Grid.Column>
         <Grid.Column>
           <Image
-            // href="/brochures/gmx"
+            href="/es/brochures/soliblock-floor"
             centered
             src={SoliBlockFloor}
             size="huge"
