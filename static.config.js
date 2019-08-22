@@ -79,6 +79,7 @@ export default {
         (x, y) => x.includes(y) ? x : [...x, y], [])
     }).catch(err => console.log(err))
     // console.log(events)
+    // console.log({ brochuresNames, slugs: brochuresNames.map(s => slugify(s, { lower: true })) })
     return [
       {
         path: '/',
@@ -126,7 +127,7 @@ export default {
               brochuresNames,
             }),
             children: brochuresNames.map(name => ({
-              path: `/${slugify(name)}`,
+              path: `/${slugify(name, { lower: true })}`,
               component: 'src/containers/en/BrochureDetail',
               getData: () => ({
                 name,
@@ -178,7 +179,7 @@ export default {
               brochuresNames,
             }),
             children: brochuresNames.map(name => ({
-              path: `/${slugify(name)}`,
+              path: `/${slugify(name, { lower: true })}`,
               component: 'src/containers/es/BrochureDetail',
               getData: () => ({
                 name,
