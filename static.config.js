@@ -178,7 +178,7 @@ export default {
               brochuresNames,
             }),
             children: brochuresNames.map(name => ({
-              path: `/${name.toLowerCase().trim()}`,
+              path: `/${slugify(name)}`,
               component: 'src/containers/es/BrochureDetail',
               getData: () => ({
                 name,
