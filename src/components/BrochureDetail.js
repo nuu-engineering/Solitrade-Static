@@ -33,10 +33,10 @@ const TitleSpan = ({ name }) => {
       title = <span>INSU<span style={{ color: '#2185d0' }}>DRY</span></span>
       break
     case 'SoliBlock Wall':
-      title = <span>SoliBlock<span style={{ color: '#2185d0' }}> Wall HP+ Acoustic Mat</span></span>
+      title = <span>SoliBlock<span style={{ color: '#2185d0' }}> Wall Acoustic Mat</span></span>
       break
     case 'SoliBlock Floor':
-      title = <span>SoliBlock<span style={{ color: '#2185d0' }}> Floor HP+ Acoustic Mat</span></span>
+      title = <span>SoliBlock<span style={{ color: '#2185d0' }}> Floor Acoustic Mat</span></span>
       break
     default:
       title = <span style={{ color: '#2185d0' }}>{name.toUpperCase()}</span>
