@@ -101,7 +101,23 @@ const PageLayout = () => (
                 <Image href="https://www.tufflexpolymers.com/" centered src={Tufflex} size="huge" />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row columns={2} centered>
+          </Grid>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Image src={Sound} centered size="large"/>
+          <Segment basic >
+            <Header as="h3">CONTROL DE RUIDO PARA INTERIORES</Header>
+            <hr style={{
+              width: '10%',
+              border: '1px solid #2185d0',
+              marginLeft: 0,
+              padding: '0% 1em',
+            }} />
+            <Header as="h5">Distribución de tapetes acústicos para control de ruido en paredes y pisos interiores. Reduce el impacto del ruido hasta en un 75%.</Header>
+          </Segment>
+          <Grid>
+            <Grid.Row columns={2}>
               <Grid.Column>
                 <Image centered src={SoliBlockWall} size="huge" />
               </Grid.Column>
@@ -122,20 +138,6 @@ const PageLayout = () => (
               padding: '0% 1em',
             }} />
             <Header as="h5">Distribuimos vidrio de alta calidad a precios competitivos.</Header>
-          </Segment>
-        </Grid.Column>
-
-        <Grid.Column>
-          <Image src={Sound} centered size="large"/>
-          <Segment basic >
-            <Header as="h3">INTERIOR SOUND CONTROL</Header>
-            <hr style={{
-              width: '10%',
-              border: '1px solid #2185d0',
-              marginLeft: 0,
-              padding: '0% 1em',
-            }} />
-            <Header as="h5">Distribución de tapetes acústicos para control de ruido en paredes y pisos interiores. Reduce el impacto del ruido hasta en un 75%.</Header>
           </Segment>
         </Grid.Column>
       </Grid.Row>

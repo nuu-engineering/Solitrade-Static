@@ -101,7 +101,23 @@ const PageLayout = () => (
                 <Image href="https://www.tufflexpolymers.com/" centered src={Tufflex} size="huge" />
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row columns={2} centered>
+          </Grid>
+        </Grid.Column>
+        
+        <Grid.Column>
+          <Image src={Sound} centered size="large"/>
+          <Segment basic >
+            <Header as="h3">INTERIOR SOUND CONTROL</Header>
+            <hr style={{
+              width: '10%',
+              border: '1px solid #2185d0',
+              marginLeft: 0,
+              padding: '0% 1em',
+            }} />
+            <Header as="h5">Distribution of sound control mats for interior wall and floor insulation. Reduce impact noise up to 75%.</Header>
+          </Segment>
+          <Grid>
+            <Grid.Row columns={2}>
               <Grid.Column>
                 <Image centered src={SoliBlockWall} size="huge" />
               </Grid.Column>
@@ -122,20 +138,6 @@ const PageLayout = () => (
               padding: '0% 1em',
             }} />
             <Header as="h5">We distribute high quality glass at competitive prices.</Header>
-          </Segment>
-        </Grid.Column>
-
-        <Grid.Column>
-          <Image src={Sound} centered size="large"/>
-          <Segment basic >
-            <Header as="h3">INTERIOR SOUND CONTROL</Header>
-            <hr style={{
-              width: '10%',
-              border: '1px solid #2185d0',
-              marginLeft: 0,
-              padding: '0% 1em',
-            }} />
-            <Header as="h5">Distribution of sound control mats for interior wall and floor insulation. Reduce impact noise up to 75%.</Header>
           </Segment>
         </Grid.Column>
       </Grid.Row>
