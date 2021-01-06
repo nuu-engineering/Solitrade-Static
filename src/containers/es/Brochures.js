@@ -73,7 +73,7 @@ const PageLayout = ({ brochuresNames }) => (
             }}
           >
             <iframe
-              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fvtkehxbl"
+              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=uiw1y2ym8y"
               width="100%"
               height="100%"
               seamless="seamless"

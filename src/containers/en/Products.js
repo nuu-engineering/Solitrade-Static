@@ -11,9 +11,10 @@ import DesktopContainer from './DesktopContainer'
 import Footer from './Footer'
 import Other from '../images/otherproducts.png'
 import Glass from '../images/glass.png'
+import Sound from './../images/SoundInterior.jpg'
 import Insulation from '../images/insulation.png'
 import Knauf from '../images/knauf.png'
-import Silvercote from '../images/logo-silvercote.png'
+import Silvercote from './../images/silvercote.png'
 import Insudry from '../images/insudry.png'
 import GMX from '../images/gmx.png'
 import Tufflex from '../images/tufflex.png'
@@ -50,7 +51,7 @@ const PageLayout = () => (
       stackable
       divided="vertically"
       style={{ padding: '3% 0%' }}
-      columns="3"
+      columns="4"
      >
       <Grid.Row>
         <Grid.Column>
@@ -67,7 +68,7 @@ const PageLayout = () => (
             <Grid>
               <Grid.Row columns={2}>
                 <Grid.Column>
-                  <Image href="http://www.knauf.es/" centered src={Knauf} size="huge" />
+                  <Image href="https://www.knaufnorthamerica.com/en-us" centered src={Knauf} size="huge" />
                 </Grid.Column>
                 <Grid.Column>
                   <Image href="https://www.silvercote.com/" centered src={Silvercote} size="huge" />
@@ -121,6 +122,20 @@ const PageLayout = () => (
               padding: '0% 1em',
             }} />
             <Header as="h5">We distribute high quality glass at competitive prices.</Header>
+          </Segment>
+        </Grid.Column>
+
+        <Grid.Column>
+          <Image src={Sound} centered size="large"/>
+          <Segment basic >
+            <Header as="h3">INTERIOR SOUND CONTROL</Header>
+            <hr style={{
+              width: '10%',
+              border: '1px solid #2185d0',
+              marginLeft: 0,
+              padding: '0% 1em',
+            }} />
+            <Header as="h5">Distribution of sound control mats for interior wall and floor insulation. Reduce impact noise up to 75%.</Header>
           </Segment>
         </Grid.Column>
       </Grid.Row>
