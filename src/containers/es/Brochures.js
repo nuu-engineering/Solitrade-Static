@@ -73,14 +73,14 @@ const PageLayout = ({ brochuresNames }) => (
             }}
           >
             <iframe
-              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=uiw1y2ym8y"
+              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=1km2ppprzp"
               width="100%"
               height="100%"
               seamless="seamless"
               scrolling="no"
               frameBorder="0"
               allowFullScreen
-              title="Solitrade Product Catalog 2019"
+              title="Solitrade Catálogo de Productos 2021"
               style={{
                 position: 'absolute',
               }}
