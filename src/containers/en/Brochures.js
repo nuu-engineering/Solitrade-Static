@@ -72,17 +72,16 @@ const PageLayout = () => (
             }}
           >
             <iframe
-              src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=1km2ppprzp"
+              style={{ width: '100%', height: '100%', position: 'absolute' }}
+              src="https://online.fliphtml5.com/ahwww/clll/"
               width="100%"
               height="100%"
               seamless="seamless"
               scrolling="no"
               frameBorder="0"
-              allowFullScreen
               title="Solitrade Product Catalog 2021"
-              style={{
-                position: 'absolute',
-              }}
+              allowTransparency
+              allowFullscreen
             />
           </div>
         </Grid.Column>
