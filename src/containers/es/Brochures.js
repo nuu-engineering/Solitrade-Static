@@ -16,6 +16,7 @@ import Insudry from '../images/insudry.png'
 import GMX from '../images/gmx.png'
 import SoliBlockWall from '../images/SoliBlock-Wall.png'
 import SoliBlockFloor from '../images/SoliBlock-Floor.png'
+import PDF from '../files/Solitrade-Catalogo-2021.pdf'
 
 const ResponsiveContainer = ({ children, urlString }) => (
   <div>
@@ -85,6 +86,19 @@ const PageLayout = ({ brochuresNames }) => (
               allowFullscreen
             />
           </div>
+          <a
+            href={PDF}
+            // href="https://nuu-group.sfo2.cdn.digitaloceanspaces.com/clients/solitrade/pdfs/Solitrade%20-%20Catalogo%202021.pdf"
+            // download="https://nuu-group.sfo2.cdn.digitaloceanspaces.com/clients/solitrade/pdfs/Solitrade%20-%20Catalogo%202021.pdf"
+            className="ui button"
+            style={{ marginTop: '1rem', marginLeft: 'auto', marginRight: 'auto', float: 'right' }}
+            download="Solitrade-Catalogo-2021.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Descargar
+          </a>
+
         </Grid.Column>
         <Grid.Column />
       </Grid.Row>
